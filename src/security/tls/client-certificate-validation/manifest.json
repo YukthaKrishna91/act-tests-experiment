@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "TLS client certificate validation",
+  "product-requirement": "Properties of the device client certificate need to meet the requirements.",
+  "specification": "Device client certificate MUST comply with Section 2.1.2 of the BBC Interactive HTML Application Spec",
+  "assertion": "Properties of the device client certificate are validated successfully against the specification.",
+  "tags": {
+    "owner": "partner-engineering",
+    "testpack-id": ["ACT-1191"],
+    "specification-section": "2.1.2 Client certificate",
+    "category": "Security",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

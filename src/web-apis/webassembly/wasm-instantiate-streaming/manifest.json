@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "WebAssembly - instantiateStreaming()",
+  "product-requirement": "Terminals MUST implement WebAssembly.instantiateStreaming() method",
+  "specification": "Terminals MUST support WebAssembly.instantiateStreaming() to compile and instantiate a module directly from a streamed source",
+  "assertion": "WebAssembly.instantiateStreaming() returns a Promise that resolves to an object with module and instance properties",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1804"],
+    "specification-section": "WebAssembly",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Initial creation of WebAssembly.instantiateStreaming() test"
+    }
+  ]
+}

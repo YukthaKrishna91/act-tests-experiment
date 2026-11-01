@@ -1,0 +1,26 @@
+{
+  "payload": "payload.js",
+  "title": "Seeking to time with timestampOffset (hevc-50fps-cbr-fhd)",
+  "product-requirement": "Client must be able to seek with timestampOffset.",
+  "specification": "Terminals MUST implement Media Source Extensions API (https://www.w3.org/TR/media-source-2/).",
+  "assertion": "MediaSource and MediaElement events must emit in expected order, and properties must be of expected values.",
+  "tags": {
+    "owner": "honey-badger",
+    "testpack-id": ["ACT-1726"],
+    "specification-section": "Runtime/media-playback",
+    "spec-requirement": "MUST",
+    "category": "Playback - MSE"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Inital creation of test"
+    },
+    {
+      "version": "v27.0.0-5",
+      "change-type": "Bug Fix",
+      "summary": "Fixed 2 race conditions: slow segment download speed can cause timeouts, appending media to buffers can commence playback before promises resolve"
+    }
+  ]
+}

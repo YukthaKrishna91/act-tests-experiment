@@ -1,0 +1,29 @@
+{
+  "payload": "payload.js",
+  "title": "img - SVG",
+  "product-requirement": "Devices will need to be able to support SVG",
+  "specification": "To support this a terminal MUST support W3C Scalable Vector Graphics (SVG) Version 1.1 (TBD)",
+  "assertion": "The rendered SVG images match pre-rendered PNG images.",
+  "configuration": {
+    "layout": "modal"
+  },
+  "tags": {
+    "owner": "barn-owl",
+    "manual-intervention": true,
+    "testpack-id": ["ACT-1598"],
+    "specification-section": "TBD",
+    "category": "HTML images"
+  },
+  "changelog": [
+    {
+      "version": "v26.0.0-7",
+      "change-type": "Bug Fix",
+      "summary": "Bug fix for image cropping in devices supporting 720p UI resolution"
+    },
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

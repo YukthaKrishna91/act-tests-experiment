@@ -1,0 +1,26 @@
+{
+  "payload": "payload.js",
+  "title": "Seeking whilst paused retains paused state (hevc-50fps-cbr-uhd)",
+  "product-requirement": "Client must maintain pausing state after seeking.",
+  "specification": "Terminals MUST implement Media Source Extensions API (https://www.w3.org/TR/media-source-2/).",
+  "assertion": "MediaSource and MediaElement events must emit in expected order, and properties must be of expected values.",
+  "tags": {
+    "owner": "honey-badger",
+    "testpack-id": ["ACT-1722"],
+    "specification-section": "Runtime/media-playback",
+    "spec-requirement": "MUST",
+    "category": "Playback - MSE UHD"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Inital creation of test"
+    },
+    {
+      "version": "v27.0.0-5",
+      "change-type": "Bug Fix",
+      "summary": "Fixed race condition: slow segment download speed can cause timeouts"
+    }
+  ]
+}

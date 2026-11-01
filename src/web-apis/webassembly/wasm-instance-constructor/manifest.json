@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "WebAssembly - Instance constructor",
+  "product-requirement": "Terminals MUST implement WebAssembly.Instance constructor",
+  "specification": "Terminals MUST support synchronous instantiation via new WebAssembly.Instance(module)",
+  "assertion": "new WebAssembly.Instance(module) returns a valid WebAssembly.Instance with exports",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1806"],
+    "specification-section": "WebAssembly",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Initial creation of WebAssembly.Instance constructor test"
+    }
+  ]
+}

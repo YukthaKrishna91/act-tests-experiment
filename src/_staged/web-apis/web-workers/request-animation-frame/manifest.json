@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "Web Workers requestAnimationFrame API",
+  "product-requirement": "Terminals MUST support requestAnimationFrame within Web Workers.",
+  "specification": "The WorkerGlobalScope supports requestAnimationFrame() method for scheduling callbacks before the next repaint.",
+  "assertion": "The requestAnimationFrame() method is available in a worker and invokes the callback with a valid timestamp.",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1773"],
+    "specification-section": "Web Workers",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  }
+}

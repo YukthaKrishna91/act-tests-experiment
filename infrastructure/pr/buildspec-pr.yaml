@@ -1,0 +1,45 @@
+version: 0.2
+
+env:
+  git-credential-helper: yes
+  variables:
+    CI: 'true'
+
+phases:
+  build:
+    commands:
+      # Force git to use HTTPS instead of SSH
+      - git config --global url."https://github.com/".insteadOf "ssh://git@github.com/" --add
+      - git config --global url."https://github.com/".insteadOf "git://github.com/" --add
+      # Check code
+      - npm ci
+      - npm run test
+      - npm run check
+      # Upload branch build to S3 test bucket on tv-certification-dev
+      - npm run build
+      - GIT_BRANCH="$(git rev-parse --abbrev-ref=strict ${CODEBUILD_WEBHOOK_HEAD_REF})"
+      - GIT_COMMIT="$(git rev-parse --short=6 ${CODEBUILD_RESOLVED_SOURCE_VERSION})"
+      - |
+        printf 'Branch name is: %s\n' "${GIT_BRANCH}"
+        printf 'Commit ID is: %s\n' "${GIT_COMMIT}"
+        printf 'Repository name is: %s\n' "${GITHUB_REPOSITORY_NAME}"
+        if ! [[ "${GIT_BRANCH}" =~ ^[[:alnum:].]*[[:alnum:]][[:alnum:]+.:\-]*$ ]]
+        then
+          printf 'TypeError: Branch name contains unsafe characters. (got %s from HEAD ref: %s)\n' "${GIT_BRANCH}" "${CODEBUILD_WEBHOOK_HEAD_REF}"
+          exit 1
+        fi
+        if ! [[ "${GIT_COMMIT}" =~ ^[0-9a-f]{6}$ ]]
+        then
+          printf 'TypeError: Commit ID contains unexpected characters. (got SHA1: %s)' "${CODEBUILD_RESOLVED_SOURCE_VERSION}"
+          exit 1
+        fi
+      - |
+        export $(printf 'AWS_ACCESS_KEY_ID=%s AWS_SECRET_ACCESS_KEY=%s AWS_SESSION_TOKEN=%s' $( \
+          aws sts assume-role \
+            --role-arn 'arn:aws:iam::931726921995:role/codepipeline-cloudformation-role' \
+            --role-session-name "${GITHUB_REPOSITORY_NAME}@commit=${GIT_COMMIT}+posix=$(date +'%s')" \
+            --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
+            --output text \
+          ) \
+        )
+      - aws s3 sync bundle "s3://test-act-test-monorepo/act/test/monorepo/branch=${GIT_BRANCH}" --delete --cache-control public,max-age=60 >/dev/null

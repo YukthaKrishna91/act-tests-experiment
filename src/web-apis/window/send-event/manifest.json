@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Standalone ContextTest send event",
+  "product-requirement": "Terminals are able to support the dispatching of message events to the document",
+  "specification": "Terminals MUST use the messaging mechanism to pass discovery and media-control interactions to a user interface.",
+  "assertion": "Test passes if a dispatched message is received by the event listener",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1476"],
+    "specification-section": "3.1.4 Messaging-based invocation mechanism",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Inital creation of test"
+    }
+  ]
+}

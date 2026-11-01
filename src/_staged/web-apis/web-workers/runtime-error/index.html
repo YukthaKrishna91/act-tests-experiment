@@ -1,0 +1,35 @@
+<div id="testStatus">Failed to Load (Javascript Disabled)</div>
+<div id="telemetryStatus"></div>
+<div id="renderArea"></div>
+<script>
+  var testStatus = document.getElementById('testStatus');
+  document.addEventListener('started', function () {
+    testStatus.innerText = 'Test Running...';
+  });
+  document.addEventListener('finished:success', function () {
+    testStatus.innerText = 'Test Passed';
+  });
+  document.addEventListener('finished:failure', function () {
+    testStatus.innerText = 'Test Failed';
+  });
+  document.addEventListener('finished:error', function () {
+    testStatus.innerText = 'Test Errored';
+  });
+
+  var telemetryStatus = document.getElementById('telemetryStatus');
+  document.addEventListener('telemetry', function (ev) {
+    var entry = document.createElement('pre');
+    entry.innerHTML = JSON.stringify(ev.detail);
+    telemetryStatus.appendChild(entry);
+  });
+
+  var renderArea = document.getElementById('renderArea');
+  document.addEventListener('requestRenderArea', function (ev) {
+    renderArea.innerHTML = '';
+    renderArea.appendChild(ev.detail);
+    setTimeout(function () {
+      document.dispatchEvent(new Event('renderAreaCompleted'));
+    }, 0);
+  });
+</script>
+<script src="./payload.js"></script>

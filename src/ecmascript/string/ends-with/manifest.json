@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "ECMAScript: String.prototype.endsWith",
+  "product-requirement": "Device must adhere to and implement ECMAScript 6.0",
+  "specification": "Terminals MUST implement at least ECMAScript 6.0 [1]",
+  "assertion": "The String.prototype.endsWith is supported.",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1426"],
+    "specification-section": "1.2 ECMAScript",
+    "category": "ECMAScript",
+    "spec-requirement": "MUST"
+  }
+}

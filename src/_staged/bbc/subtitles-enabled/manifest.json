@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Runtime - Supports system level subtitles BBC API",
+  "product-requirement": "The product will reflect the system level setting of subtitles",
+  "specification": "If the terminal supports remote controls with a subtitles, they MUST implement a central setting store and expose the setting to BBC applications via subtitlesEnabled API.",
+  "assertion": "Test passes if the the subtitlesEnabled APIs is defined",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": [],
+    "specification-section": "Runtime - Remote Control Units - Subtitles",
+    "spec-requirement": "MUST",
+    "category": "BBC"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Inital creation of test"
+    }
+  ]
+}

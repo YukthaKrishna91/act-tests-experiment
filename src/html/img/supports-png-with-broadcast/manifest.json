@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "img - PNG",
+  "product-requirement": "Display PNG images correctly with broadcast.",
+  "specification": "Image formats MUST be supported, as specified in clause 6.2 of the OIPF Declarative Application Environment.",
+  "assertion": "Standard and transparent PNG images render correctly with broadcast, and transparent areas display the background as expected.",
+  "configuration": {
+    "layout": "fullscreen"
+  },
+  "tags": {
+    "owner": "warrimoo",
+    "testpack-id": ["ACT-1769"],
+    "specification-section": "Media > Images",
+    "category": "HTML images",
+    "manual-intervention": true,
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

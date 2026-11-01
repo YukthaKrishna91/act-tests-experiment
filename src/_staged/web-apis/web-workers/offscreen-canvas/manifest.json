@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "Web Workers OffscreenCanvas support",
+  "product-requirement": "Terminals MUST support OffscreenCanvas instantiation within Web Workers.",
+  "specification": "The WorkerGlobalScope supports OffscreenCanvas for rendering graphics without access to the DOM.",
+  "assertion": "The OffscreenCanvas API is available in a worker and can be instantiated.",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1786"],
+    "specification-section": "Web Workers",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  }
+}

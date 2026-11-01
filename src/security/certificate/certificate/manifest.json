@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Secure Media Endpoints Certificate Validation (Live)",
+  "product-requirement": "Device needs to present a valid client certificate in order to access the BBC's secure media endpoints.",
+  "specification": "When accessing BBC services over HTTPS, each terminal MUST present its TLS certificate if prompted to by the server; thus identifying the terminal model. (2.1 Terminal Authentication)",
+  "assertion": "Make a JSONP request to the live mediaselector endpoints. If a response is received within 10 seconds then the certificate is valid.",
+  "tags": {
+    "owner": "partner-engineering",
+    "testpack-id": ["ACT-1023"],
+    "specification-section": "2.1 Terminal Authentication",
+    "category": "Security",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "img - Higher resolution srcset",
+  "product-requirement": "Devices should support selecting higher-resolution image resources from img srcset, including when rendered over background video.",
+  "specification": "BBC applications MUST be rendered correctly, be responsive, and perform at acceptable levels.",
+  "assertion": "An image using srcset selects the expected resolution candidate for the device graphics plane and renders the correct detail compared with a fixed 1280x720 reference image.",
+  "configuration": {
+    "layout": "fullscreen"
+  },
+  "tags": {
+    "owner": "warrimoo",
+    "testpack-id": ["ACT-1823"],
+    "specification-section": "Presentation > Layout, rendering and composition",
+    "category": "HTML images",
+    "manual-intervention": true,
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "WebGL2 - Canvas getContext('webgl2')",
+  "product-requirement": "Terminals MUST implement WebGL v2",
+  "specification": "Terminals MUST implement WebGL v2 and permit a visible BBC application (main thread) to obtain WebGL2RenderingContext via Canvas object's getContext API ('webgl2' context identifier)",
+  "assertion": "Canvas.getContext('webgl2') returns a valid WebGL2RenderingContext",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1790"],
+    "specification-section": "WebGL",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Initial creation of WebGL2 context test for Canvas"
+    }
+  ]
+}

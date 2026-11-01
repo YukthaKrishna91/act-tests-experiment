@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "ECMAScript: Test Set forEach() method",
+  "product-requirement": "Device needs to support Set().forEach().",
+  "specification": "Terminals MUST implement at least ECMAScript 6.0 [1]",
+  "assertion": "Set.forEach() follows insertion order.",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1408"],
+    "specification-section": "1.2 ECMAScript",
+    "category": "ECMAScript",
+    "spec-requirement": "MUST"
+  }
+}

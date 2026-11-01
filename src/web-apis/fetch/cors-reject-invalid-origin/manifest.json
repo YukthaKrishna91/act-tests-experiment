@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Fetch - CORS Rejects Invalid Origin",
+  "product-requirement": "Applications do not connect to untrusted domains to protect against malicious activity",
+  "specification": "Terminals MUST implement CORS and the CORS protocol as defined in Fetch [54]",
+  "assertion": "Make a request to a server which incorrectly implements CORS and confirm the client rejects the response",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1261"],
+    "specification-section": "1.6 Networking",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

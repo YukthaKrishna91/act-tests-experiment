@@ -1,0 +1,65 @@
+<div id="testStatus">Failed to Load (Javascript Disabled)</div>
+<div style="position: absolute; right: 0; top: 0; width: 50%; height: 50%" id="renderArea"></div>
+<ol id="telemetryEvents" style="font-family: monospace"></ol>
+<div id="interventionArea"></div>
+<script>
+  var testStatus = document.getElementById('testStatus');
+  var renderArea = document.getElementById('renderArea');
+  var telemetryEvents = document.getElementById('telemetryEvents');
+  var interventionArea = document.getElementById('interventionArea');
+  document.addEventListener('started', function () {
+    testStatus.innerText = 'Test Running...';
+  });
+  document.addEventListener('finished:success', function () {
+    testStatus.innerText = 'Test Passed';
+  });
+  document.addEventListener('finished:failure', function () {
+    testStatus.innerText = 'Test Failed';
+  });
+  document.addEventListener('finished:error', function (e) {
+    testStatus.innerText = 'Test Errored' + JSON.stringify(e);
+  });
+  document.addEventListener('requestRenderArea', function (ev) {
+    renderArea.innerHTML = '';
+    renderArea.appendChild(ev.detail);
+    var renderCompleted = new Event('renderAreaCompleted');
+    document.dispatchEvent(renderCompleted);
+  });
+  document.addEventListener('telemetry', function (ev) {
+    var telemetrySpan = document.createElement('li');
+    telemetrySpan.innerText = JSON.stringify(ev.detail, null, 2);
+    telemetryEvents.appendChild(telemetrySpan);
+  });
+  document.addEventListener('requestIntervention', function (ev) {
+    testStatus.innerText = 'Test Pending';
+    interventionArea.innerHTML = '';
+    var interventionText = document.createElement('p');
+    interventionText.innerText = ev.detail.request.text || '';
+    interventionArea.appendChild(interventionText);
+    var options = ev.detail.request.options || [
+      {
+        label: 'Dismiss',
+        value: null,
+        class: 'primary'
+      }
+    ];
+    options.forEach((option) => {
+      var optionButton = document.createElement('button');
+      optionButton.classList.add('intervention-response');
+      optionButton.innerText = option.label;
+      optionButton.addEventListener('click', function () {
+        var interventionResponse = new CustomEvent('responseToIntervention', {
+          detail: {
+            response: {
+              userResponse: option.value
+            }
+          }
+        });
+        interventionArea.innerHTML = '';
+        document.dispatchEvent(interventionResponse);
+      });
+      interventionArea.appendChild(optionButton);
+    });
+  });
+</script>
+<script src="./payload.js"></script>

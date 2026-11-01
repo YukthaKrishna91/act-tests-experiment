@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Websockets - Send and receive messages",
+  "product-requirement": "Device must implement the WebSocket API",
+  "specification": "Terminals without a tuner MUST implement the WebSocket API as defined in clause 9.3 of HTML [10], WebSocket Protocol [50]",
+  "assertion": "Websocket can send and receive message",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1439"],
+    "specification-section": "1.6.3 WebSocket Support",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

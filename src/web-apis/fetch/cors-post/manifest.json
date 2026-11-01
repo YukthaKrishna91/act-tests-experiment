@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Fetch - CORS POST and encode",
+  "product-requirement": "Applications may require use of CORS POST request to send data for purposes such as authentication, or search.",
+  "specification": "Terminals MUST implement CORS and the CORS protocol as defined in Fetch [54]",
+  "assertion": "",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1265"],
+    "specification-section": "1.6 Networking",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

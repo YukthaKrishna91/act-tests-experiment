@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "WebGL - webglcontextrestored event",
+  "product-requirement": "Terminals MUST raise webglcontextrestored event when restoring a WebGL context",
+  "specification": "Terminals MUST raise the webglcontextrestored event when the context is restored (e.g., when application returns to foreground)",
+  "assertion": "The webglcontextrestored event fires when the WebGL context is restored after being lost",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1798"],
+    "specification-section": "WebGL",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Initial creation of webglcontextrestored event test"
+    }
+  ]
+}

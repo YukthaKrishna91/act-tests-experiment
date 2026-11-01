@@ -1,0 +1,17 @@
+{
+  "payload": "payload.js",
+  "title": "Use ChunkSource to load a 50fps HEVC chunked CMAF stream",
+  "tags": {
+    "owner": "honey-badger",
+    "testpack-id": [],
+    "spec-requirement": "MUST",
+    "category": "Playback - MSE"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Inital creation of test"
+    }
+  ]
+}

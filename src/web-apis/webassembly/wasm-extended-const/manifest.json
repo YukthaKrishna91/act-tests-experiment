@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "WebAssembly - Extended constant expressions",
+  "product-requirement": "Terminals MUST implement WebAssembly extended-const feature",
+  "specification": "Terminals MUST support arithmetic operations (i32.add, i32.sub, i32.mul) in constant expressions",
+  "assertion": "WebAssembly global can be initialized with i32.add constant expression",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1813"],
+    "specification-section": "WebAssembly",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Initial creation of extended-const feature test"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Web Workers fetch API",
+  "product-requirement": "Terminals MUST support the Fetch API within Web Workers.",
+  "specification": "The Fetch API provides an interface for fetching resources (including across the network). It is available in the WorkerGlobalScope.",
+  "assertion": "The fetch() method is available in a worker and can be used to successfully fetch a resource.",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1783"],
+    "specification-section": "Web Workers",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Initial creation of Web Workers fetch API test"
+    }
+  ]
+}

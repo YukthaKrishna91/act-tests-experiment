@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "Supports background images",
+  "product-requirement": "Ability to add layered background images to an element.",
+  "specification": "CSS specifications referenced in clause 3.4 of CTA Web Media API snapshot MUST be implemented.",
+  "assertion": "Layered background images look as expected.",
+  "configuration": {
+    "layout": "modal"
+  },
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1291"],
+    "manual-intervention": true,
+    "specification-section": "1.4.2 CSS",
+    "category": "CSS",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Expire Cookie",
+  "product-requirement": "Client needs to be able to expire cookies based on dates to support session management.",
+  "specification": "Persistent HTTP cookie support adhering to RFC 6265 (https://tools.ietf.org/html/rfc6265) MUST be provided.",
+  "assertion": "Cookies with an expiration date in the past are deleted from the list of cookies.",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1052"],
+    "specification-section": "1.7 Local Storage",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

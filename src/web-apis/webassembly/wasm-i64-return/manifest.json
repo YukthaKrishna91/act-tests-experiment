@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "WebAssembly - i64 return as BigInt",
+  "product-requirement": "Terminals MUST implement WebAssembly i64/BigInt integration",
+  "specification": "Terminals MUST support i64 return values being converted to JavaScript BigInt",
+  "assertion": "WebAssembly function returning i64 returns a BigInt in JavaScript",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1803"],
+    "specification-section": "WebAssembly",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Initial creation of i64 return BigInt test"
+    }
+  ]
+}

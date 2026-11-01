@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "ECMAScript: Spread syntax (...)",
+  "product-requirement": "Device must adhere to and implement ECMASCript 6.0",
+  "specification": "Terminals MUST implement at least ECMAScript 6.0 [1]",
+  "assertion": "Verify Spread syntax (...) can be used on an iterable such as an array expression or string ",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1381"],
+    "specification-section": "1.2 ECMAScript",
+    "category": "ECMAScript",
+    "spec-requirement": "MUST"
+  }
+}

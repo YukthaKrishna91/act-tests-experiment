@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Runtime - Supports system level subtitles HbbTV APIs for Audio Description",
+  "product-requirement": "The product will reflect the system level setting of audio described",
+  "specification": "If the terminal supports remote controls with a audio description, they MUST implement a central setting store and expose the setting to BBC applications via audioDescriptionEnabled API.",
+  "assertion": "Test passes if the the audioDescriptionEnabled APIs are set to be either true or false",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1603"],
+    "specification-section": "Runtime - Remote Control Units - Audio Description",
+    "spec-requirement": "MUST",
+    "category": "HbbTV"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Inital creation of test"
+    }
+  ]
+}

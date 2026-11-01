@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "TLS v1.2 Support",
+  "product-requirement": "Device needs to support TLS v1.2 in order to connect to some BBC services.",
+  "specification": "TLS v1.2 MUST be supported.",
+  "assertion": "Device is able to make a request to an endpoint using TLS v1.2",
+  "tags": {
+    "owner": "partner-engineering",
+    "testpack-id": ["ACT-1041"],
+    "specification-section": "1.6.4 TLS Support",
+    "category": "Security",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

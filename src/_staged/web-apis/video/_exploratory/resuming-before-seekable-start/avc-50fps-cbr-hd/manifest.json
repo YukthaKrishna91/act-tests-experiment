@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Resuming before seekable start (avc-50fps-cbr-hd)",
+  "product-requirement": "",
+  "specification": "",
+  "assertion": "",
+  "tags": {
+    "owner": "honey-badger",
+    "testpack-id": [],
+    "specification-section": "Runtime/media-playback",
+    "spec-requirement": "MUST",
+    "category": "Playback - MSE"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Inital creation of test"
+    }
+  ]
+}

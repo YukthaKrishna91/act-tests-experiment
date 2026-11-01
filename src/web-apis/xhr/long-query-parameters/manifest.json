@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "XHR - Long Query Parameters",
+  "product-requirement": "Applications may require use of long query parameters up to a valid length",
+  "specification": "The terminal MUST support the XMLHttpRequest (XHR) object [5]",
+  "assertion": "Make a XHR request with long query parameters and confirm the server received the full query",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1037"],
+    "specification-section": "1.6 Networking",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

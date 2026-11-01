@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Overwrite Cookie",
+  "product-requirement": "Client needs to be able overwrite cookies in storage to update or nullify them.",
+  "specification": "Persistent HTTP cookie support adhering to RFC 6265 (https://tools.ietf.org/html/rfc6265)  MUST be provided.",
+  "assertion": "Cookie written to storage, then overwritten with a new value evaluates to the new value.",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1051"],
+    "specification-section": "1.7 Local Storage",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

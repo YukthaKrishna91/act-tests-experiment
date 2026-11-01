@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "ECMAScript: Test if bind() function is supported.",
+  "product-requirement": "Device needs to support Function.prototype.bind() to create a new function that, when called, has its this keyword set to the provided value.",
+  "specification": "Terminals MUST implement at least ECMAScript 6.0 [1]",
+  "assertion": "Testing if the bind() function is supported, passing the user object into the original function 'func' which return a phrase that should be match with the expected value to pass the test.",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1227"],
+    "specification-section": "1.2 ECMAScript",
+    "category": "ECMAScript",
+    "spec-requirement": "MUST"
+  }
+}

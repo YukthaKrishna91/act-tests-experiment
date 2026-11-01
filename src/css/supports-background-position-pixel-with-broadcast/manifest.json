@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "Supports background position (pixel) with broadcast",
+  "product-requirement": "Display background images at the correct initial position using pixel values with broadcast.",
+  "specification": "CSS specifications referenced in clause 3.4 of CTA WAVE Web Media API Snapshot MUST be implemented.",
+  "assertion": "Background images are displayed at the correct initial position using pixel values with broadcast.",
+  "configuration": {
+    "layout": "fullscreen"
+  },
+  "tags": {
+    "owner": "warrimoo",
+    "testpack-id": ["ACT-1768"],
+    "manual-intervention": true,
+    "specification-section": "Runtime > Styling",
+    "category": "CSS",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

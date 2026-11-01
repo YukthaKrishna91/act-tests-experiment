@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "Arrow functions",
+  "product-requirement": "Device needs to support arrow function expressions as a compact alternative to a traditional function expression.",
+  "specification": "Terminals MUST implement at least ECMAScript 6.0 [1]",
+  "assertion": "Arrow functions are like functions, except they throw when using the new operator on them",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1011"],
+    "specification-section": "1.2 ECMAScript",
+    "category": "ECMAScript",
+    "spec-requirement": "MUST"
+  }
+}

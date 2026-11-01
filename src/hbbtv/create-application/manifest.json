@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Create application",
+  "product-requirement": "The device supports the createApplication behaviour",
+  "specification": "The terminal MUST support the declarative creation of the application/oipfApplicationManager object",
+  "assertion": "Test passes if the appmgr element is present and the createApplication funciton",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1601"],
+    "specification-section": "Runtime - createApplication behaviour",
+    "spec-requirement": "MUST",
+    "category": "HbbTV API interoperability"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Inital creation of test"
+    }
+  ]
+}

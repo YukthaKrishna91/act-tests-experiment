@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "img - GIF",
+  "product-requirement": "Display GIF images correctly with broadcast.",
+  "specification": "Image formats MUST be supported, as specified in clause 6.2 of the OIPF Declarative Application Environment.",
+  "assertion": "Static and animated GIF images render correctly with broadcast, and the animated GIF plays as expected.",
+  "configuration": {
+    "layout": "fullscreen"
+  },
+  "tags": {
+    "owner": "warrimoo",
+    "testpack-id": ["ACT-1771"],
+    "specification-section": "Media > Images",
+    "category": "HTML images",
+    "manual-intervention": true,
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

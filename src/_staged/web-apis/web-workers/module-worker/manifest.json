@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "Web Workers module support",
+  "product-requirement": "Terminals MUST support ES6 module Workers via the { type: 'module' } option.",
+  "specification": "The Worker constructor accepts an options object, which can set the worker's type to 'module'.",
+  "assertion": "A worker can be created with { type: 'module' } and can successfully import and use other modules.",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1777"],
+    "specification-section": "Web Workers",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  }
+}

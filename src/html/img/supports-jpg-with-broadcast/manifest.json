@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "img - JPG",
+  "product-requirement": "Display JPG images correctly with broadcast.",
+  "specification": "Image formats MUST be supported, as specified in clause 6.2 of the OIPF Declarative Application Environment.",
+  "assertion": "The JPG image renders correctly with broadcast and matches the description.",
+  "configuration": {
+    "layout": "fullscreen"
+  },
+  "tags": {
+    "owner": "warrimoo",
+    "testpack-id": ["ACT-1770"],
+    "specification-section": "Media > Images",
+    "category": "HTML images",
+    "manual-intervention": true,
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

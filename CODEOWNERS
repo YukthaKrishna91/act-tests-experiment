@@ -1,0 +1,19 @@
+src/accessibility @bbc/barn-owl
+src/bbc @bbc/barn-owl
+src/bbc/screen-capability-api @bbc/honey-badger-core
+src/bbc/screen-capability-panel-check @bbc/honey-badger-core
+src/css @bbc/barn-owl
+src/hbbtv @bbc/barn-owl
+src/hbbtv/screen-capability-api @bbc/honey-badger-core
+src/hbbtv/screen-capability-panel-check @bbc/honey-badger-core
+src/html @bbc/barn-owl
+src/svg @bbc/barn-owl
+src/_staged @bbc/barn-owl @bbc/honey-badger-core
+src/web-apis @bbc/barn-owl
+src/web-apis/audio @bbc/honey-badger-core
+src/web-apis/video @bbc/honey-badger-core
+src/http @bbc/barn-owl @bbc/partner-engineering
+src/security @bbc/barn-owl @bbc/partner-engineering
+infrastructure @bbc/barn-owl
+lib @bbc/barn-owl @bbc/honey-badger-core
+templates @bbc/honey-badger-core

@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "img - Load",
+  "product-requirement": "We need to know when an image finishes loading.",
+  "specification": "Terminals MUST implement HTML to the requirements of the \"Web browsers and other interactive user agents\" conformance class.",
+  "assertion": "The 'onload' callback is called and 'complete' property updated when an image loads.",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1313"],
+    "specification-section": "1.1 HTML and DOM",
+    "category": "HTML images",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "Web Workers creation",
+  "product-requirement": "Terminals MUST support Web Worker creation, messaging, and termination.",
+  "specification": "The Worker interface of the Web Workers API creates a background worker thread.",
+  "assertion": "The Worker() constructor creates a worker and returns a Worker object.",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1781"],
+    "specification-section": "Web Workers",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  }
+}

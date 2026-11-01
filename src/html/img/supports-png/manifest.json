@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "img - PNG",
+  "product-requirement": "Devices should support loading png images.",
+  "specification": "Terminals MUST implement HTML to the requirements of the \"Web browsers and other interactive user agents\" conformance class.",
+  "assertion": "The 'onload' callback is called and 'complete' property updated when an image loads.",
+  "configuration": {
+    "layout": "modal"
+  },
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1323"],
+    "specification-section": "1.1 HTML and DOM",
+    "category": "HTML images",
+    "manual-intervention": true,
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

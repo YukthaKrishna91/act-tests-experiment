@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "ECMAScript: Test if Array subclassing supported",
+  "product-requirement": "Device needs to support classes that extend the Array class and it's behaviour w.r.t. the length property.",
+  "specification": "Terminals MUST implement at least ECMAScript 6.0 [1]",
+  "assertion": "An instance of a class that subclasses Array will update its length property when properties with names that are array indexes are added and removed",
+  "changelog": [
+    {
+      "version": "v1.4.0",
+      "change-type": "New Test",
+      "summary": "Verify that subclasses of Array continue to behave as an Array"
+    }
+  ],
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1471"],
+    "specification-section": "1.2 ECMAScript",
+    "category": "ECMAScript",
+    "spec-requirement": "MUST"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Clear Local Storage",
+  "product-requirement": "Client needs to be able to clear all items from local storage in order to log out a user.",
+  "specification": "Terminals MUST support Web Storage (https://www.w3.org/TR/2013/REC-webstorage-20130730/).",
+  "assertion": "Multiple items can be added to local storage and after clearing the storage, all evaluate to null.",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1049"],
+    "specification-section": "1.7 Local Storage",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

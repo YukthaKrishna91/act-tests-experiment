@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Supports border box transition",
+  "product-requirement": "Have the ability to do transition within an element set to box-sizing: border-box.",
+  "specification": "The CSS specifications referenced in clause 3.4 of CTA Web Media API snapshot MUST be implemented.",
+  "assertion": "We can do transitions within an element set to box-sizing: border-box.",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1430"],
+    "specification-section": "1.4.2 CSS",
+    "category": "CSS",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

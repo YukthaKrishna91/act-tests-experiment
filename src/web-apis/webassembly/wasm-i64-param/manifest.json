@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "WebAssembly - BigInt as i64 parameter",
+  "product-requirement": "Terminals MUST implement WebAssembly i64/BigInt integration",
+  "specification": "Terminals MUST support passing JavaScript BigInt values as i64 parameters",
+  "assertion": "WebAssembly function accepts BigInt parameters for i64 type",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1817"],
+    "specification-section": "WebAssembly",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Initial creation of BigInt i64 parameter test"
+    }
+  ]
+}

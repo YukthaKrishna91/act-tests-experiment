@@ -1,0 +1,26 @@
+{
+  "payload": "payload.js",
+  "title": "Seeking past duration (25fps UHD HEVC video with CBR)",
+  "product-requirement": "Client must have access to expected events and properties after seeking past duration.",
+  "specification": "[HTML] If the new playback position is later than the end of the media resource, then let it be the end of the media resource instead.",
+  "assertion": "After seeking past the media duration, HTMLMediaElement.currentTime must be no greater than the duration.",
+  "tags": {
+    "owner": "honey-badger",
+    "testpack-id": ["ACT-1690"],
+    "specification-section": "Runtime/media-playback",
+    "spec-requirement": "MUST",
+    "category": "Playback - MSE UHD"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Inital creation of test"
+    },
+    {
+      "version": "v27.0.0-8",
+      "change-type": "Bug Fix",
+      "summary": "Updated test asset"
+    }
+  ]
+}

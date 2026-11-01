@@ -1,0 +1,26 @@
+{
+  "payload": "payload.js",
+  "title": "Key Events - Multiple keys optional repeat",
+  "product-requirement": "Be able to navigate in the app via key presses",
+  "specification": "The device MUST support one of the following sets of methods for identifying key interactions. HTMLDocument.onkeyup/HTMLDocument.onkeydown or Window.onkeydown/Window.onkeyup",
+  "assertion": "Key down and key up events work correctly when multiple keys are held down at the same time",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1592"],
+    "specification-section": "1.3.4.1 Input handling > Event Handlers",
+    "category": "Web API",
+    "spec-requirement": "MUST",
+    "manual-intervention": true
+  },
+  "configuration": {
+    "timeout": 60000,
+    "layout": "modal"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

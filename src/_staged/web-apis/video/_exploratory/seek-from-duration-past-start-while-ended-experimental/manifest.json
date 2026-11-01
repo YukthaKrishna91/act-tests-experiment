@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Playback - MSE seeking from duration to passed seekable start while in ended state - debug behaviour after end-of-stream",
+  "product-requirement": "",
+  "specification": "",
+  "assertion": "",
+  "tags": {
+    "owner": "honey-badger",
+    "testpack-id": [""],
+    "specification-section": "",
+    "spec-requirement": "MUST",
+    "category": ""
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Inital creation of test"
+    }
+  ]
+}

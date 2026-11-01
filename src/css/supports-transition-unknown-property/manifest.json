@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Supports transition unknown property",
+  "product-requirement": "Transitions in the app.",
+  "specification": "CSS specifications referenced in clause 3.4 of CTA Web Media API snapshot MUST be implemented.",
+  "assertion": "Transitions still work on known properties if there is one or more it doesn't support.",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1270"],
+    "specification-section": "1.4.2 CSS",
+    "category": "CSS",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "payload": "payload.js",
+  "title": "Key Mapping (KeyboardEvent.code)",
+  "product-requirement": "Be able to interact with the application via key presses",
+  "specification": "Key input as described in clause UI Events MUST be supported",
+  "assertion": "Keys MUST be mapped correctly using KeyboardEvent.code",
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ],
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1774"],
+    "specification-section": "Document object model and events",
+    "category": "BBC API interoperability",
+    "spec-requirement": "MUST",
+    "manual-intervention": true
+  },
+  "configuration": {
+    "timeout": 120000,
+    "layout": "modal"
+  }
+}

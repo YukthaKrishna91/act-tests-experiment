@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "WebAssembly - Global constructor (i32)",
+  "product-requirement": "Terminals MUST implement WebAssembly.Global constructor",
+  "specification": "Terminals MUST support creating globals via new WebAssembly.Global({value: 'i32'}, n)",
+  "assertion": "new WebAssembly.Global({value: 'i32'}, 42) creates a Global with value 42",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1816"],
+    "specification-section": "WebAssembly",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Initial creation of WebAssembly.Global constructor test"
+    }
+  ]
+}

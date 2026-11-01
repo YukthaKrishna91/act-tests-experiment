@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "Supports Reith WOFF font rendering",
+  "product-requirement": "Display custom Reith WOFF fonts correctly in the app.",
+  "specification": "Terminals MUST support downloadable fonts using the WOFF File Format 1.0.",
+  "assertion": "Custom Reith WOFF font glyphs are rendered correctly.",
+  "configuration": {
+    "layout": "fullscreen"
+  },
+  "tags": {
+    "owner": "warrimoo",
+    "testpack-id": ["ACT-1824"],
+    "manual-intervention": true,
+    "specification-section": "Media > Fonts",
+    "category": "CSS",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "ECMAScript: Test if the Map size property works as expected",
+  "product-requirement": "Device needs to support Map.size.",
+  "specification": "Terminals MUST implement at least ECMAScript 6.0 [1]",
+  "assertion": "The Map size property behaves as expected.",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1392"],
+    "specification-section": "1.2 ECMAScript",
+    "category": "ECMAScript",
+    "spec-requirement": "MUST"
+  }
+}

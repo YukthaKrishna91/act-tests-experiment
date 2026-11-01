@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "WebAssembly - Bulk memory operations",
+  "product-requirement": "Terminals MUST implement WebAssembly bulk-memory feature",
+  "specification": "Terminals MUST support bulk memory operations (memory.copy, memory.fill)",
+  "assertion": "WebAssembly memory.fill and memory.copy instructions work correctly",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1812"],
+    "specification-section": "WebAssembly",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Initial creation of bulk-memory feature test"
+    }
+  ]
+}

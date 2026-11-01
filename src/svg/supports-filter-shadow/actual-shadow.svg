@@ -1,0 +1,11 @@
+<svg height="130" width="240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="filter" x="0" y="0">
+      <feGaussianBlur stdDeviation="5" />
+      <feOffset dx="5" dy="5" />
+    </filter>
+  </defs>
+  <circle cx="60" cy="70" r="50" width="90" height="90" fill="green" />
+  <circle cx="170" cy="70" r="50" width="90" height="90" fill="grey" filter="url(#filter)" />
+  <circle cx="170" cy="70" r="50" width="90" height="90" fill="green" stroke="black" />
+</svg>

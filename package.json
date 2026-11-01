@@ -1,0 +1,42 @@
+{
+  "name": "act-tests",
+  "version": "27.0.0-6",
+  "description": "ACT Test Monorepo",
+  "type": "module",
+  "author": "",
+  "scripts": {
+    "build:wasm": "bash ./scripts/build-wasm.sh",
+    "build": "rm -rf ./bundle/* && ./esbuild.bundle.mjs",
+    "dev": "__BUNDLER_MODE=dev ./esbuild.bundle.mjs",
+    "test": "node --test --test-reporter=spec --experimental-test-module-mocks $( [[ -z \"$CI\" ]] && printf %s '--watch' ) ./lib/**/*.test.js ./scripts/lib/**/*.test.js",
+    "check": "eslint --cache ./ && prettier ./ --check",
+    "lint": "eslint --cache --fix .",
+    "format": "prettier --ignore-path .gitignore --write --cache .",
+    "release": "./scripts/release.sh",
+    "prepare": "husky",
+    "id": "./scripts/act-id.sh",
+    "list-tests": "node ./scripts/compile-test-pack.js --pack monorepo --version latest > ./monorepo.json",
+    "get-unpacked-tests": "node ./scripts/get-unpacked-tests.cjs",
+    "get-manifest": "./scripts/get-manifest.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbc/act-tests.git"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "esbuild": "^0.25.5",
+    "eslint": "^9.18.0",
+    "globals": "^15.14.0",
+    "husky": "^9.1.7",
+    "jsdom": "^27.0.0",
+    "open": "^10.1.0",
+    "prettier": "3.4.2",
+    "undici": "^6.22.0"
+  },
+  "dependencies": {
+    "@bbc/smp-media-selector": "github:bbc/smp-media-selector#v1.7.0",
+    "act-sdk": "github:bbc/act-sdk#semver:^1.4.0",
+    "codem-isoboxer": "^0.3.10"
+  }
+}

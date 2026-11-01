@@ -1,0 +1,22 @@
+{
+  "payload": "payload.js",
+  "title": "Local Storage with minimum storage limit",
+  "product-requirement": "Local storage must be able to persist at least a minimum of 524288 characters to local storage",
+  "specification": "Terminals MUST support the persistent storage of at least 1 MiB (524288 characters) of local storage for BBC applications",
+  "assertion": "Local storage is able to store 524288 characters",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1610"],
+    "manual-intervention": false,
+    "specification-section": "Local storage > Web storage",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

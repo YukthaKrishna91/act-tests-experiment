@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "WebGL - Canvas get webgl context",
+  "product-requirement": "Terminals MUST permit obtaining WebGLRenderingContext via Canvas getContext API",
+  "specification": "Terminals MUST permit a visible BBC application (main thread) to obtain WebGLRenderingContext via Canvas object's getContext API ('webgl' context identifier)",
+  "assertion": "Canvas.getContext('webgl') returns a valid WebGLRenderingContext",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1791"],
+    "specification-section": "WebGL",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Initial creation of WebGL context test for Canvas"
+    }
+  ]
+}

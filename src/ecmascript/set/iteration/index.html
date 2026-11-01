@@ -1,0 +1,17 @@
+<div id="testStatus">Failed to Load (Javascript Disabled)</div>
+<script>
+  var testStatus = document.getElementById('testStatus');
+  document.addEventListener('started', function () {
+    testStatus.innerText = 'Test Running...';
+  });
+  document.addEventListener('finished:success', function () {
+    testStatus.innerText = 'Test Passed';
+  });
+  document.addEventListener('finished:failure', function () {
+    testStatus.innerText = 'Test Failed';
+  });
+  document.addEventListener('finished:error', function () {
+    testStatus.innerText = 'Test Errored';
+  });
+</script>
+<script src="./payload.js"></script>

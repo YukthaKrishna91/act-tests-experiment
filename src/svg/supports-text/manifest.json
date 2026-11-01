@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "Supports text",
+  "product-requirement": "Be able to draw text using Scalable Vector Graphics (SVG).",
+  "specification": "Terminals SHOULD support Scalable Vector Graphics.",
+  "assertion": "SVG text is supported.",
+  "configuration": {
+    "layout": "modal"
+  },
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1320"],
+    "manual-intervention": true,
+    "specification-section": "1.4.6 Scalable Vector Graphics",
+    "category": "SVG",
+    "spec-requirement": "SHOULD"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

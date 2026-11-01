@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "WebAssembly - Global mutable",
+  "product-requirement": "Terminals MUST implement mutable WebAssembly.Global",
+  "specification": "Terminals MUST support mutable globals that can be modified via global.value",
+  "assertion": "Mutable WebAssembly.Global can have its value changed",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1808"],
+    "specification-section": "WebAssembly",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Initial creation of mutable WebAssembly.Global test"
+    }
+  ]
+}

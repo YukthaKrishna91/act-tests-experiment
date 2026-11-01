@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Screen Capability - API",
+  "product-requirement": "Expose the capabilities of the screen in order to only serve UHD content to capable screens",
+  "specification": "Section 10.2.4 of TS 102 796 (HBBTV 1.5.1)",
+  "assertion": "HBBTV specification API exists",
+  "tags": {
+    "owner": "honey-badger",
+    "testpack-id": ["ACT-1223"],
+    "specification-section": "2.3.4 - Display Capabilities",
+    "category": "HbbTV API interoperability",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

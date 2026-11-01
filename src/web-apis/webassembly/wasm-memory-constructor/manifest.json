@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "WebAssembly - Memory constructor",
+  "product-requirement": "Terminals MUST implement WebAssembly.Memory constructor",
+  "specification": "Terminals MUST support creating linear memory via new WebAssembly.Memory({initial, maximum})",
+  "assertion": "new WebAssembly.Memory({initial: 1}) creates a Memory with 64KB buffer",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1802"],
+    "specification-section": "WebAssembly",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Initial creation of WebAssembly.Memory constructor test"
+    }
+  ]
+}

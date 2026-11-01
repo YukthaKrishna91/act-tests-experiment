@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "BBC - Viewport",
+  "product-requirement": "BBC applications will need to be correctly rendered at either 1280x720 or 1920x1080 resolution",
+  "specification": "BBC Streamlined Runtime Specification",
+  "assertion": "The viewport should be correctly rendered for 720 and 1080",
+  "configuration": {
+    "layout": "fullscreen"
+  },
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1604"],
+    "specification-section": "Presentation - Layout, rendering, and composition",
+    "spec-requirement": "MUST",
+    "category": "BBC API interoperability",
+    "manual-intervention": true
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial commit of test"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "Web Workers self-closing",
+  "product-requirement": "Terminals MUST support Web Workers terminating themselves via self.close().",
+  "specification": "The WorkerGlobalScope.close() method of the WorkerGlobalScope interface effectively terminates the worker.",
+  "assertion": "Calling self.close() within a worker terminates its execution context.",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1782"],
+    "specification-section": "Web Workers",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  }
+}

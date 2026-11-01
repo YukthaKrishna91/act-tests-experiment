@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "Supports opacity",
+  "product-requirement": "Needed to fade parts of UI in and out.",
+  "specification": "CSS specifications referenced in clause 3.4 of CTA Web Media API snapshot MUST be implemented.",
+  "assertion": "We can change the opacity of elements.",
+  "configuration": {
+    "layout": "modal"
+  },
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1273"],
+    "manual-intervention": true,
+    "specification-section": "1.4.2 CSS",
+    "category": "CSS",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

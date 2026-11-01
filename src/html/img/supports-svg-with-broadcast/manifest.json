@@ -1,0 +1,24 @@
+{
+  "payload": "payload.js",
+  "title": "img - SVG",
+  "product-requirement": "Display SVG images correctly with broadcast.",
+  "specification": "Terminals MUST support Scalable Vector Graphics.",
+  "assertion": "SVG images render correctly with broadcast and match the expected PNG images.",
+  "configuration": {
+    "layout": "fullscreen"
+  },
+  "tags": {
+    "owner": "warrimoo",
+    "manual-intervention": true,
+    "testpack-id": ["ACT-1772"],
+    "specification-section": "Media > Scalable vector graphics",
+    "category": "HTML images"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

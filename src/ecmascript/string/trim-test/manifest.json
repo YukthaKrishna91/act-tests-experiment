@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "ECMAScript: String trimming with String.trim()",
+  "product-requirement": "Device needs to support ",
+  "specification": "Terminals MUST implement at least ECMAScript 6.0 [1]",
+  "assertion": "Remove the white spaces from both sides of a string and assert if the result is correct",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1014"],
+    "specification-section": "1.2 ECMAScript",
+    "category": "ECMAScript",
+    "spec-requirement": "MUST"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Supports native focus [requires getComputedStyle]",
+  "product-requirement": "Ability to support native focus on DOM elements.",
+  "specification": "The CSS specifications referenced in clause 3.4 of CTA Web Media API snapshot MUST be implemented.",
+  "assertion": "Setting focus on an element changes its CSS properties to what the code defines.",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1303"],
+    "specification-section": "1.4.2 CSS",
+    "category": "CSS",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

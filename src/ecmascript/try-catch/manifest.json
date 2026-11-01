@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "ECMAScript: Exception handling with try...catch",
+  "product-requirement": "Device needs to handle exceptions correctly so that the application can keep functioning in the event of an error.",
+  "specification": "Terminals MUST implement at least ECMAScript 6.0 [1]",
+  "assertion": "Throw and error and check that it is caught using try...catch",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1015"],
+    "specification-section": "1.2 ECMAScript",
+    "category": "ECMAScript",
+    "spec-requirement": "MUST"
+  }
+}

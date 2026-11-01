@@ -1,0 +1,155 @@
+Description: CI infrastructure for ACT Test Monorepo
+
+Resources:
+  CodeBuildRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+          - Action: sts:AssumeRole
+            Effect: Allow
+            Principal:
+              Service: codebuild.amazonaws.com
+      ManagedPolicyArns:
+        - arn:aws:iam::979446310614:policy/CodeBuildBasePolicy
+      Policies:
+        - PolicyName: ACTTestMonorepoBuildRole
+          PolicyDocument:
+            Statement:
+              - Action:
+                  - s3:PutObject
+                  - s3:PutObjectAcl
+                  - s3:ListBucket
+                  - s3:DeleteObject
+                Resource:
+                  - arn:aws:s3:::live-act-test-monorepo/*
+                  - arn:aws:s3:::test-act-test-monorepo/*
+                Effect: Allow
+
+  BuildAndDeployACTTests:
+    Type: AWS::CodeBuild::Project
+    Properties:
+      TimeoutInMinutes: 30
+      ServiceRole: !GetAtt CodeBuildRole.Arn
+      Name: act-tests-monorepo-upload
+      Environment:
+        ComputeType: BUILD_GENERAL1_SMALL
+        Image: 979446310614.dkr.ecr.eu-west-1.amazonaws.com/itv-ci-images-extended-bbc-el8-ci-ac:latest
+        Type: LINUX_CONTAINER
+      Artifacts:
+        Type: CODEPIPELINE
+      Source:
+        BuildSpec: infrastructure/release/buildspec-release.yaml
+        Type: CODEPIPELINE
+      Description: Uploads ACT test to the monorepo buckets
+
+  CodePipeline:
+    Type: AWS::CodePipeline::Pipeline
+    Properties:
+      Name: 'act-tests-monorepo-codepipeline'
+      RoleArn: arn:aws:iam::979446310614:role/codepipeline-execution-role
+      ArtifactStore:
+        Type: S3
+        Location: itv-ci-jobs-artifactsbucket-oqsnfnwyfn4z
+        EncryptionKey:
+          Id: 'arn:aws:kms:eu-west-1:979446310614:alias/codepipeline-kms-key'
+          Type: 'KMS'
+      Stages:
+        - Name: Source
+          Actions:
+            - Name: Clone-From-Act-Monorepo
+              RunOrder: 1
+              ActionTypeId:
+                Category: Source
+                Owner: AWS
+                Version: '1'
+                Provider: CodeStarSourceConnection
+              OutputArtifacts:
+                - Name: ACTMonorepoSource
+              Configuration:
+                ConnectionArn: !ImportValue itv-ci-jobs-codestar-connection-arn # Sort of magic. Pulls in connection from another stack in same account.
+                FullRepositoryId: bbc/act-tests
+                BranchName: main
+                OutputArtifactFormat: CODE_ZIP
+
+        - Name: Deploy-Test-Bucket
+          Actions:
+            - Name: Create-Test-Env-Act-Test-Monorepo-Stack-Change-Set
+              RunOrder: 1
+              ActionTypeId:
+                Category: Deploy
+                Owner: AWS
+                Version: '1'
+                Provider: CloudFormation
+              InputArtifacts:
+                - Name: ACTMonorepoSource
+              Configuration:
+                ActionMode: CHANGE_SET_REPLACE
+                StackName: test-act-tests-monorepo-bucket
+                ChangeSetName: test-act-tests-monorepo-bucket-ChangeSet
+                RoleArn: arn:aws:iam::931726921995:role/codepipeline-cloudformation-role
+                TemplatePath: ACTMonorepoSource::infrastructure/bucket/bucket.yml
+                TemplateConfiguration: ACTMonorepoSource::infrastructure/bucket/test.config.json
+              RoleArn: arn:aws:iam::931726921995:role/codepipeline-cloudformation-role
+
+            - Name: Execute-Test-Env-Act-Test-Monorepo-Stack-Change-Set
+              RunOrder: 2
+              ActionTypeId:
+                Category: Deploy
+                Owner: AWS
+                Version: '1'
+                Provider: CloudFormation
+              Configuration:
+                ActionMode: CHANGE_SET_EXECUTE
+                StackName: test-act-tests-monorepo-bucket
+                ChangeSetName: test-act-tests-monorepo-bucket-ChangeSet
+                RoleArn: arn:aws:iam::931726921995:role/codepipeline-cloudformation-role
+              RoleArn: arn:aws:iam::931726921995:role/codepipeline-cloudformation-role
+
+        - Name: Deploy-Live-Bucket
+          Actions:
+            - Name: Create-Live-Env-Act-Live-Monorepo-Stack-Change-Set
+              RunOrder: 1
+              ActionTypeId:
+                Category: Deploy
+                Owner: AWS
+                Version: '1'
+                Provider: CloudFormation
+              InputArtifacts:
+                - Name: ACTMonorepoSource
+              Configuration:
+                ActionMode: CHANGE_SET_REPLACE
+                StackName: live-act-tests-monorepo-bucket
+                ChangeSetName: live-act-tests-monorepo-bucket-ChangeSet
+                RoleArn: arn:aws:iam::615125061974:role/codepipeline-cloudformation-role
+                TemplatePath: ACTMonorepoSource::infrastructure/bucket/bucket.yml
+                TemplateConfiguration: ACTMonorepoSource::infrastructure/bucket/live.config.json
+              RoleArn: arn:aws:iam::615125061974:role/codepipeline-cloudformation-role
+
+            - Name: Execute-Live-Env-Act-Test-Monorepo-Stack-Change-Set
+              RunOrder: 2
+              ActionTypeId:
+                Category: Deploy
+                Owner: AWS
+                Version: '1'
+                Provider: CloudFormation
+              Configuration:
+                ActionMode: CHANGE_SET_EXECUTE
+                StackName: live-act-tests-monorepo-bucket
+                ChangeSetName: live-act-tests-monorepo-bucket-ChangeSet
+                RoleArn: arn:aws:iam::615125061974:role/codepipeline-cloudformation-role
+              RoleArn: arn:aws:iam::615125061974:role/codepipeline-cloudformation-role
+
+        - Name: Upload-Tests
+          Actions:
+            - Name: Upload-ACT-tests
+              RunOrder: 1
+              ActionTypeId:
+                Category: Build
+                Owner: AWS
+                Version: '1'
+                Provider: CodeBuild
+              InputArtifacts:
+                - Name: ACTMonorepoSource
+              Configuration:
+                ProjectName: act-tests-monorepo-upload

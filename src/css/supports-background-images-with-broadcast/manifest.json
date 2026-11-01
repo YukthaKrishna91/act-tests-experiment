@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "Supports background images with broadcast",
+  "product-requirement": "Display layered background images on an element with broadcast.",
+  "specification": "CSS specifications referenced in clause 3.4 of CTA WAVE Web Media API Snapshot MUST be implemented.",
+  "assertion": "Layered background images look as expected with broadcast.",
+  "configuration": {
+    "layout": "fullscreen"
+  },
+  "tags": {
+    "owner": "warrimoo",
+    "testpack-id": ["ACT-1788"],
+    "manual-intervention": true,
+    "specification-section": "Runtime > Styling",
+    "category": "CSS",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

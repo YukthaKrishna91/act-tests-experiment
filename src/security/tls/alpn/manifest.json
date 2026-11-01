@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "TLS extension ALPN support",
+  "product-requirement": "Device MUST support the ALPN extension of TLS.",
+  "specification": "HTTP/2 must be fully supported, this requires ALPN.",
+  "assertion": "ALPN is required to fully support HTTP/2 - BBC Interactive HTML Application Spec",
+  "tags": {
+    "owner": "partner-engineering",
+    "testpack-id": ["ACT-1192"],
+    "specification-section": "Section 1.6.6",
+    "category": "Security",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

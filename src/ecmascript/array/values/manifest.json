@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "ECMAScript: Array.prototype.values()",
+  "product-requirement": "Device must adhere to and implement ECMASCript 6.0",
+  "specification": "Terminals MUST implement at least ECMAScript 6.0 [1]",
+  "assertion": "Verify that Array.prototype.values() is supported",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1388"],
+    "specification-section": "1.2 ECMAScript",
+    "category": "ECMAScript",
+    "spec-requirement": "MUST"
+  }
+}

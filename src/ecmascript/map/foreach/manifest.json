@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "ECMAScript: Test Map forEach() method",
+  "product-requirement": "Device needs to support Map().forEach().",
+  "specification": "Terminals MUST implement at least ECMAScript 6.0 [1]",
+  "assertion": "Map.forEach() follows insertion order.",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1399"],
+    "specification-section": "1.2 ECMAScript",
+    "category": "ECMAScript",
+    "spec-requirement": "MUST"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "Supports text color transition",
+  "product-requirement": "Efficient transitions in the app.",
+  "specification": "The CSS specifications referenced in clause 3.4 of CTA Web Media API snapshot [53] MUST be implemented.",
+  "assertion": "Text color can be transitioned",
+  "configuration": {
+    "layout": "modal"
+  },
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1340"],
+    "manual-intervention": true,
+    "specification-section": "1.4.2 CSS",
+    "category": "CSS",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

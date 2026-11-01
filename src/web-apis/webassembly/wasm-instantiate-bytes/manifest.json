@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "WebAssembly - instantiate() from bytes",
+  "product-requirement": "Terminals MUST implement WebAssembly.instantiate() method",
+  "specification": "Terminals MUST support WebAssembly.instantiate(bytes) to compile and instantiate bytecode",
+  "assertion": "WebAssembly.instantiate(bytes) returns a Promise resolving to {module, instance}",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1811"],
+    "specification-section": "WebAssembly",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Initial creation of WebAssembly.instantiate() from bytes test"
+    }
+  ]
+}

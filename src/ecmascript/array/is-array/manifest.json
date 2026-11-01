@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "ECMAScript: Test if isArray() supported",
+  "product-requirement": "Device needs to support Array.isArray() to determine whether the passed value is an Array.",
+  "specification": "Terminals MUST implement at least ECMAScript 6.0 [1]",
+  "assertion": "The Array.isArray() method determine whether an array is a valid array",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1005"],
+    "specification-section": "1.2 ECMAScript",
+    "category": "ECMAScript",
+    "spec-requirement": "MUST"
+  }
+}

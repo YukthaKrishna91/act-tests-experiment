@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Read and Write using Local Storage",
+  "product-requirement": "Need to be able to write and retrieve specific items to local storage in order to support sessions.",
+  "specification": "Terminals MUST support Web Storage (https://www.w3.org/TR/2013/REC-webstorage-20130730/).",
+  "assertion": "Item can be added to local storage then retrieved.",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1054"],
+    "specification-section": "1.7 Local Storage",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

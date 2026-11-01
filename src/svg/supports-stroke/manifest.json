@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "Supports stroke",
+  "product-requirement": "Devices should support SVG strokes.",
+  "specification": "Terminals SHOULD support Scalable Vector Graphics",
+  "assertion": "Image renders a stroke correctly",
+  "configuration": {
+    "layout": "modal"
+  },
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1334"],
+    "specification-section": "1.4.6 Scalable Vector Graphics",
+    "category": "SVG",
+    "manual-intervention": true,
+    "spec-requirement": "SHOULD"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

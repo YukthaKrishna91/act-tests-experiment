@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "ECMAScript: Test if WeakMap set(), has() and get() methods are supported",
+  "product-requirement": "Device needs to support WeakMap() with set(), has() and get() methods.",
+  "specification": "Terminals MUST implement at least ECMAScript 6.0 [1]",
+  "assertion": "The WeakMap() constructor and the set(), has() and get() methods behave as expected.",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1393"],
+    "specification-section": "1.2 ECMAScript",
+    "category": "ECMAScript",
+    "spec-requirement": "MUST"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "payload": "payload.js",
+  "title": "Screen Capability - Panel Check",
+  "product-requirement": "Expose the capabilities of the screen in order to only serve UHD content to capable screens",
+  "specification": "2.3.4 - Display Capabilities",
+  "assertion": "Device returns correct/expected screen capability info",
+  "tags": {
+    "owner": "honey-badger",
+    "testpack-id": ["ACT-1222"],
+    "manual-intervention": true,
+    "specification-section": "2.3.4 - Display Capabilities",
+    "category": "HbbTV API interoperability",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

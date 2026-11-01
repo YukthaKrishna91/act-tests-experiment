@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Supports position relative in absolute",
+  "product-requirement": "Layout",
+  "specification": "The CSS specifications referenced in clause 3.4 of CTA Web Media API snapshot MUST be implemented.",
+  "assertion": "An element can be positioned relatively with `top` inside an element positioned absolutely.",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1429"],
+    "specification-section": "1.4.2 CSS",
+    "category": "CSS",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

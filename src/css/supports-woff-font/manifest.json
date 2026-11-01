@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "Supports woff-font",
+  "product-requirement": "Using custom fonts in the app.",
+  "specification": "CSS specifications referenced in clause 3.4 of CTA Web Media API snapshot MUST be implemented.",
+  "assertion": "We can load fonts in the WOFF format.",
+  "configuration": {
+    "layout": "modal"
+  },
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1337"],
+    "manual-intervention": true,
+    "specification-section": "1.4.2 CSS",
+    "category": "CSS",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Canvas - Supports API",
+  "product-requirement": "Be able to render content in a canvas element",
+  "specification": "Terminals SHOULD support the Canvas element, including support for the 2D context, as specified in HTML Canvas 2D Context",
+  "assertion": "Canvas API exists and functions as expected",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1296"],
+    "specification-section": "1.4.4 Canvas",
+    "category": "Web API",
+    "spec-requirement": "SHOULD"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

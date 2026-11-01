@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Web Workers concurrent execution (four workers)",
+  "product-requirement": "Terminals SHOULD support at least four concurrently executing Web Workers for each application instance.",
+  "specification": "Terminals SHOULD support at least four concurrently executing Web Workers for each application instance.",
+  "assertion": "Four Web Workers can be created and execute concurrently.",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1787"],
+    "specification-section": "Web Workers",
+    "category": "Web API",
+    "spec-requirement": "SHOULD"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Initial creation of Web Workers concurrent execution test (four workers)"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "'no-cache' Header Respect Test",
+  "product-requirement": "The Device may be required to not cache data",
+  "specification": "'no-cache' headers MUST also be respected.",
+  "assertion": "Make a request every second and make sure the device accepts the new response without caching the old one",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1039"],
+    "specification-section": "2.2.6 Stream Delivery and throughput requirements",
+    "category": "HTTP",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

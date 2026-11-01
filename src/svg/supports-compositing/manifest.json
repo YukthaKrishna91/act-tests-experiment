@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "Supports compositing",
+  "product-requirement": "Devices should support compositing SVG images.",
+  "specification": "Terminals SHOULD support Scalable Vector Graphics",
+  "assertion": "Image renders following composite masks being applied",
+  "configuration": {
+    "layout": "modal"
+  },
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1330"],
+    "specification-section": "1.4.6 Scalable Vector Graphics",
+    "category": "SVG",
+    "manual-intervention": true,
+    "spec-requirement": "SHOULD"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

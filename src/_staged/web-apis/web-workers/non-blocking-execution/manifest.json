@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "Web Workers non-blocking execution",
+  "product-requirement": "Terminals MUST execute Web Worker tasks without blocking the main thread.",
+  "specification": "Web Workers execute on a separate thread from the main execution thread, ensuring that long-running tasks do not block the main thread.",
+  "assertion": "A computationally intensive task executed in a worker does not block the main thread's execution.",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1778"],
+    "specification-section": "Web Workers",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  }
+}

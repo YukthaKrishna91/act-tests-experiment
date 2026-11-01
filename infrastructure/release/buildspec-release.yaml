@@ -1,0 +1,55 @@
+version: 0.2
+
+env:
+  variables:
+    GIT_SSH_COMMAND: ssh
+  secrets-manager:
+    GITHUB_KEY: '/CodeBuild/Github:GithubSSHKey'
+    GITHUB_HOST_KEY: '/CodeBuild/Github:GithubHostKey'
+
+phases:
+  build:
+    commands:
+      - set -e
+      - configure_github
+
+      # make temp folder to store clone of repo with git meta data (i.e. tags)
+      - mkdir full-clone && cd full-clone
+      - git clone --filter=tree:0 git@github.com:bbc/act-tests.git --branch main . >/dev/null
+
+      # set up and build
+      - npm ci
+      - CI=true npm run test
+      - npm run build
+
+      # deploy all tests to 'latest' in Test
+      - source assume_role arn:aws:iam::931726921995:role/codepipeline-cloudformation-role
+      - aws s3 sync bundle s3://test-act-test-monorepo/act/test/monorepo/latest --delete --cache-control public,max-age=60 >/dev/null
+
+      # deploy all tests to 'latest' in Live
+      - source assume_role arn:aws:iam::615125061974:role/codepipeline-cloudformation-role
+      - aws s3 sync bundle s3://live-act-test-monorepo/act/test/monorepo/latest --delete --cache-control public,max-age=60 >/dev/null
+
+      # get the current github tag
+      - LATEST_TAG=$(git describe --tags $(git rev-list --tags --max-count=1))
+      - echo $LATEST_TAG
+
+      # get versions from s3
+      - S3_VERSIONS=$(aws s3 ls s3://live-act-test-monorepo/act/test/monorepo/)
+      - echo $S3_VERSIONS
+
+      # Check if current tag is listed in s3
+      - |
+        if [[ $S3_VERSIONS == *$LATEST_TAG* ]]; then
+          echo No new github tag found. Not deploying a new version of the tests.
+        else
+          echo New github tag identified. Deploying all tests under version number $LATEST_TAG
+
+          # upload to Test
+          source assume_role arn:aws:iam::931726921995:role/codepipeline-cloudformation-role
+          aws s3 sync bundle s3://test-act-test-monorepo/act/test/monorepo/$LATEST_TAG --cache-control public,max-age=60 >/dev/null
+
+          # upload to Live
+          source assume_role arn:aws:iam::615125061974:role/codepipeline-cloudformation-role
+          aws s3 sync bundle s3://live-act-test-monorepo/act/test/monorepo/$LATEST_TAG --cache-control public,max-age=60 >/dev/null
+        fi

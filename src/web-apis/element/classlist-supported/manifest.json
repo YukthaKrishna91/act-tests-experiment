@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Element - classList supported",
+  "product-requirement": "Be able to conveniently add and remove classes to elements.",
+  "specification": "Terminals MUST implement HTML to the requirements of the “Web browsers and other interactive user agents” conformance class.",
+  "assertion": "The expected classes are added or removed.",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1307"],
+    "specification-section": "1.1 HTML and DOM",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

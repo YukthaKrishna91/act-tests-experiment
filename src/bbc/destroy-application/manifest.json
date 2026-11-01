@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Destroy Application",
+  "product-requirement": "The device supports the destroyApplication behaviour",
+  "specification": "The terminal MUST support the declarative creation of the application/oipfApplicationManager object",
+  "assertion": "Test passes if the Application Manager element is present on the BBC window object and implements the destroyApplication funciton",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1588"],
+    "specification-section": "Runtime - destroyApplication behaviour",
+    "spec-requirement": "MUST",
+    "category": "BBC API interoperability"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Inital creation of test"
+    }
+  ]
+}

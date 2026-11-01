@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Delete from Local Storage",
+  "product-requirement": "Need to be able to remove specific items from local storage in order to support user sessions.",
+  "specification": "Terminals MUST support Web Storage (https://www.w3.org/TR/2013/REC-webstorage-20130730/).",
+  "assertion": "Item can be added to local storage then removed.",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1050"],
+    "specification-section": "1.7 Local Storage",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

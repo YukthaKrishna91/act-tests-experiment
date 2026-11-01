@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "Supports transition scale image with broadcast",
+  "product-requirement": "Display an image that scales smoothly during a transition without losing quality when used with broadcast.",
+  "specification": "CSS specifications referenced in clause 3.4 of CTA WAVE Web Media API Snapshot MUST be implemented.",
+  "assertion": "The image scales smoothly without becoming blurry when used with broadcast.",
+  "configuration": {
+    "layout": "fullscreen"
+  },
+  "tags": {
+    "owner": "warrimoo",
+    "testpack-id": ["ACT-1764"],
+    "manual-intervention": true,
+    "specification-section": "Runtime > Styling",
+    "category": "CSS",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

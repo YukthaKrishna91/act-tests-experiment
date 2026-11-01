@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "Web Workers runtime error handling",
+  "product-requirement": "Terminals MUST fire the onerror event on the Worker object when a runtime error occurs in the worker.",
+  "specification": "When a runtime script error occurs in the worker, its `onerror` event handler is called.",
+  "assertion": "An unhandled exception within a worker triggers the `onerror` event handler on the Worker object.",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1776"],
+    "specification-section": "Web Workers",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "ECMAScript: Encode an object to JSON with JSON.stringify()",
+  "product-requirement": "Device needs to support JSON.stringify() to convert a JavaScript object or value to a JSON string.",
+  "specification": "Terminals MUST implement at least ECMAScript 6.0 [1]",
+  "assertion": "Encode an object to JSON and assert its correctly been encoded",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1013"],
+    "specification-section": "1.2 ECMAScript",
+    "category": "ECMAScript",
+    "spec-requirement": "MUST"
+  }
+}

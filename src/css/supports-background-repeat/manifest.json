@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "Supports background repeat",
+  "product-requirement": "Have the ability to repeat an image in both directions.",
+  "specification": "The CSS specifications referenced in clause 3.4 of CTA Web Media API snapshot MUST be implemented.",
+  "assertion": "Repeating an image in both directions renders correctly.",
+  "configuration": {
+    "layout": "modal"
+  },
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1311"],
+    "manual-intervention": true,
+    "specification-section": "1.4.2 CSS",
+    "category": "CSS",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

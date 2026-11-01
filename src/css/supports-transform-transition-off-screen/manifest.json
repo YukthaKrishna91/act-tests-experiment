@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "Supports transform transition off screen",
+  "product-requirement": "We can have items slide onto screen.",
+  "specification": "CSS specifications referenced in clause 3.4 of CTA Web Media API snapshot MUST be implemented.",
+  "assertion": "Transitions can slide items onto screen.",
+  "configuration": {
+    "layout": "fullscreen"
+  },
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1271"],
+    "manual-intervention": true,
+    "specification-section": "1.4.2 CSS",
+    "category": "CSS",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

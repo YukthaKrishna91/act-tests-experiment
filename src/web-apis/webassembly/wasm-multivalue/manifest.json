@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "WebAssembly - Multi-value returns",
+  "product-requirement": "Terminals MUST implement WebAssembly multivalue feature",
+  "specification": "Terminals MUST support functions that return multiple values",
+  "assertion": "WebAssembly function can return multiple values",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1818"],
+    "specification-section": "WebAssembly",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Initial creation of multivalue feature test"
+    }
+  ]
+}

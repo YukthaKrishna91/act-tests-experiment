@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Date and Time",
+  "product-requirement": "Date and Time is required for launch, video playback, and EPG features accurate time information needs to be stored in local storage.",
+  "specification": "1.2. ECMAScript Terminals MUST support, at least, ECMAScript 6.",
+  "assertion": "Check Client time is less than 3s different from a trusted time source.",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1048"],
+    "specification-section": "1.2 ECMAScript",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

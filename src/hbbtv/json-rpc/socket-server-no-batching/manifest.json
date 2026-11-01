@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "JSON-RPC WebSocketServer no batching",
+  "product-requirement": "The JSON-RPC WebSocketServer does not batch individual request responses",
+  "specification": "TBC",
+  "assertion": "An application connects to the JSON-RPC WSS server and arranges for the required capability negotiations (for the messages to be transmitted later in the test) to be successfully conducted. Then, the application transmits a rapid sequence of 8 (eight) individual (i.e. not batched) conformant and valid JSON-RPC request messages to the terminals JSON-RPC WSS server. Corresponding messages returned from the terminal are inspected to successfully confirm that the responses are not batched",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": [],
+    "specification-section": "",
+    "spec-requirement": "SHOULD",
+    "category": "HbbTV API interoperability"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Inital creation of test"
+    }
+  ]
+}

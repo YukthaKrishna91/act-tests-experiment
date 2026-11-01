@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Redirect Test",
+  "product-requirement": "The Device may need to follow redirects for stream delivery",
+  "specification": "Terminals MUST follow redirection responses",
+  "assertion": "Can receive a response from a different endpoint location",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1040"],
+    "specification-section": "2.2.6 Stream Delivery and throughput requirements",
+    "category": "HTTP",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

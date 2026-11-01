@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "WebAssembly - Overlong call_indirect immediate",
+  "product-requirement": "Terminals MUST accept overlong LEB128 immediates in call_indirect (Lime1)",
+  "specification": "Terminals MUST validate WebAssembly modules whose call_indirect instruction encodes its table index immediate as a non-canonical (overlong) LEB128",
+  "assertion": "WebAssembly.validate accepts a module containing call_indirect with a 4-byte LEB128 encoding of the table index 0",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1821"],
+    "specification-section": "WebAssembly",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Initial creation of call_indirect overlong-immediate feature test"
+    }
+  ]
+}

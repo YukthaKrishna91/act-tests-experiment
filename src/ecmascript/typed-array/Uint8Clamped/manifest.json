@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "ECMAScript: UInt8ClampedArray",
+  "product-requirement": "Device must adhere to and implement ECMAScript 6.0",
+  "specification": "Terminals MUST implement at least ECMAScript 6.0 [1]",
+  "assertion": "The UInt8ClampedArray is supported.",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1421"],
+    "specification-section": "1.2 ECMAScript",
+    "category": "ECMAScript",
+    "spec-requirement": "MUST"
+  }
+}

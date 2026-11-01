@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "Broadcast Playback Play State",
+  "product-requirement": "Report broadcast pause and resume state via onPlaySpeedChanged.",
+  "specification": "Media control keys SHOULD be present on at least one supplied remote control unit.",
+  "assertion": "The broadcast reports a paused state and then a resumed state via onPlaySpeedChanged, and the resumed state includes a positive playbackOffset.",
+  "configuration": {
+    "layout": "fullscreen"
+  },
+  "tags": {
+    "owner": "warrimoo",
+    "testpack-id": ["ACT-1830"],
+    "manual-intervention": true,
+    "specification-section": "Remote control units > Media control",
+    "category": "HbbTV API interoperability",
+    "spec-requirement": "SHOULD"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

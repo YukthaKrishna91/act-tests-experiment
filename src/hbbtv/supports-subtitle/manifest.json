@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "Support for system-level subtitles",
+  "product-requirement": "Expose the system-level subtitles setting via the OIPF configuration object.",
+  "specification": "The terminal MUST support the declarative creation of the application/oipfConfiguration object, defined in clause 7.3.1 of OIPF Declarative Application Environment, e.g., <object id=\"oipfcfg\" type=\"application/oipfConfiguration\"></object>.",
+  "assertion": "When system-level subtitles are enabled, the OIPF configuration object is available and reports subtitlesEnabled as true.",
+  "configuration": {
+    "layout": "fullscreen"
+  },
+  "tags": {
+    "owner": "warrimoo",
+    "testpack-id": ["ACT-1828"],
+    "manual-intervention": true,
+    "specification-section": "Runtime > Subtitles and audio description",
+    "category": "HbbTV API interoperability",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

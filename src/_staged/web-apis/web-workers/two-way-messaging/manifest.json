@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "Web Workers two-way messaging",
+  "product-requirement": "Terminals MUST support bidirectional messaging between the main thread and Web Workers via postMessage.",
+  "specification": "The Worker interface and WorkerGlobalScope provide postMessage() and onmessage handlers for communication.",
+  "assertion": "Messages can be sent from the main thread to a worker and back using postMessage() and the onmessage event handler.",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1780"],
+    "specification-section": "Web Workers",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  }
+}

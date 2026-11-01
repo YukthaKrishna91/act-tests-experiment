@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "WebAssembly - Non-trapping float-to-int conversions",
+  "product-requirement": "Terminals MUST implement WebAssembly nontrapping-fptoint feature",
+  "specification": "Terminals MUST support saturating float-to-int conversions (i32.trunc_sat_f32_s, etc.)",
+  "assertion": "WebAssembly saturating truncation instructions return saturated values instead of trapping",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1815"],
+    "specification-section": "WebAssembly",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Initial creation of nontrapping-fptoint feature test"
+    }
+  ]
+}

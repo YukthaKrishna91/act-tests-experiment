@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "WebAssembly - Module constructor",
+  "product-requirement": "Terminals MUST implement WebAssembly.Module constructor",
+  "specification": "Terminals MUST support synchronous compilation via new WebAssembly.Module(bytes)",
+  "assertion": "new WebAssembly.Module(bytes) returns a valid WebAssembly.Module instance",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1809"],
+    "specification-section": "WebAssembly",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Initial creation of WebAssembly.Module constructor test"
+    }
+  ]
+}

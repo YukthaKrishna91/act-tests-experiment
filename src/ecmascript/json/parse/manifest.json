@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "ECMAScript: Parsing JSON strings with JSON.parse()",
+  "product-requirement": "Device needs to support JSON.parse() to parse a JSON string, constructing the JavaScript value or object described by the string.",
+  "specification": "Terminals MUST implement at least ECMAScript 6.0 [1]",
+  "assertion": "Parse a json encoded string and assert its been correctly parsed",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1012"],
+    "specification-section": "1.2 ECMAScript",
+    "category": "ECMAScript",
+    "spec-requirement": "MUST"
+  }
+}

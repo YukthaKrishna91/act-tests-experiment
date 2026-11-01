@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "Web Workers timer APIs",
+  "product-requirement": "Terminals MUST support setTimeout and clearTimeout within Web Workers.",
+  "specification": "The WorkerGlobalScope supports methods of the WindowOrWorkerGlobalScope mixin, including setTimeout() and clearTimeout().",
+  "assertion": "The setTimeout() and clearTimeout() methods are available in a worker and execute scheduled callbacks correctly.",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1785"],
+    "specification-section": "Web Workers",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  }
+}

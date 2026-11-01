@@ -1,0 +1,26 @@
+{
+  "payload": "payload.js",
+  "title": "Time to playback after seeking to IDR frame (chunked-avc-50fps-cbr-hd)",
+  "product-requirement": "Client must commence with playback promptly while the MediaElement is not paused and media is or becomes available at the playhead.",
+  "specification": "https://certification.bbctvapps.co.uk/docs/tv-specification-bbc/v27.0.0/#/Runtime/media-playback",
+  "assertion": "MediaElement must emit a playing event within 1s of at least 500ms of media being buffered, while not in the paused state and after seeking to the start of the buffered chunk. The approximate buffered duration must have elapsed after MediaElement emits an ended event.",
+  "tags": {
+    "owner": "honey-badger",
+    "testpack-id": ["ACT-1765"],
+    "specification-section": "Runtime/media-playback",
+    "spec-requirement": "MUST",
+    "category": "Playback - MSE"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Inital creation of test"
+    },
+    {
+      "version": "v27.0.0-5",
+      "change-type": "Bug Fix",
+      "summary": "Removed use of unsupported browser APIs and fixed 2 race conditions: slow segment download speed can cause timeouts, appending media to buffers can commence playback before promises resolve"
+    }
+  ]
+}

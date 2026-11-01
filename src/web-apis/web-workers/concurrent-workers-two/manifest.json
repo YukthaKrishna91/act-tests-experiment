@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Web Workers concurrent execution (two workers)",
+  "product-requirement": "Terminals MUST support at least two concurrently executing Web Workers for each BBC application instance.",
+  "specification": "Terminals MUST support at least two concurrently executing Web Workers for each application instance.",
+  "assertion": "Two Web Workers can be created and execute concurrently.",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1775"],
+    "specification-section": "Web Workers",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Initial creation of Web Workers concurrent execution test (two workers)"
+    }
+  ]
+}

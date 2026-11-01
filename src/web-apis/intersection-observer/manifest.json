@@ -1,0 +1,35 @@
+{
+  "payload": "payload.js",
+  "title": "Intersection Observer",
+  "product-requirement": "Test if the device has support for Intersection Observer",
+  "specification": "Intersection Observer",
+  "assertion": "Intersection Observer is supported",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1585"],
+    "specification-section": "1.1 HTML and DOM",
+    "category": "Web API",
+    "spec-requirement": "MUST",
+    "manual-intervention": false
+  },
+  "configuration": {
+    "layout": "default"
+  },
+  "changelog": [
+    {
+      "version": "1050",
+      "change-type": "Improvement",
+      "summary": "Updating test version and pack number"
+    },
+    {
+      "version": "1047",
+      "change-type": "New Test",
+      "summary": "Publishing test"
+    },
+    {
+      "version": "latest",
+      "change-type": "Improvement",
+      "summary": "Created the test"
+    }
+  ]
+}

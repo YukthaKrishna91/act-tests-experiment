@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "Canvas - Supports Animation",
+  "product-requirement": "Be able to animate canvas content",
+  "specification": "Terminals SHOULD support the Canvas element, including support for the 2D context, as specified in HTML Canvas 2D Context",
+  "assertion": "Canvas animation is supported",
+  "configuration": {
+    "layout": "modal"
+  },
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1295"],
+    "manual-intervention": true,
+    "specification-section": "1.4.4 Canvas",
+    "category": "Web API",
+    "spec-requirement": "SHOULD"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

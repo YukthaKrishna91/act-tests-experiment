@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "Cookie persistence after a power cycle",
+  "product-requirement": "Cookies MUST be able to persist to allow user to remain logged in, and to track analytics around device usage.",
+  "specification": "Persistent HTTP cookie support adhering to RFC 6265 [2] MUST be provided.",
+  "assertion": "Cookies can be written and then read; they should still exist after switching the device off and on before relaunching ACT.",
+  "configuration": {
+    "layout": "modal"
+  },
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1046"],
+    "manual-intervention": true,
+    "specification-section": "1.7 Local Storage",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

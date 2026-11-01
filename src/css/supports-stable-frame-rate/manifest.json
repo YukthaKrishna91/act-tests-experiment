@@ -1,0 +1,30 @@
+{
+  "payload": "payload.js",
+  "title": "Supports stable frame rate",
+  "product-requirement": "Ability to do high quality animation.",
+  "specification": "The CSS specifications referenced in clause 3.4 of CTA Web Media API snapshot MUST be implemented.",
+  "assertion": "Animate with a suitably high and stable frame rate.",
+  "configuration": {
+    "layout": "fullscreen"
+  },
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1436"],
+    "manual-intervention": true,
+    "specification-section": "1.4.2 CSS",
+    "category": "CSS",
+    "spec-requirement": "SHOULD"
+  },
+  "changelog": [
+    {
+      "version": "v26.0.0-5",
+      "change-type": "Improvement",
+      "summary": "Use fixed number(15) of animations across all devices"
+    },
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

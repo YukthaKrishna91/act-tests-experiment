@@ -1,0 +1,31 @@
+{
+  "payload": "payload.js",
+  "title": "Key Mapping",
+  "product-requirement": "Be able to interact with the application via key presses",
+  "specification": "Key input as described in clause A.3.3 of TS 102 796 [14] MUST be supported",
+  "assertion": "Keys MUST be mapped correctly",
+  "changelog": [
+    {
+      "version": "840",
+      "change-type": "New Test",
+      "summary": "Publishing test"
+    },
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ],
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1583"],
+    "specification-section": "1.3.1 Input Handling",
+    "category": "BBC API interoperability",
+    "spec-requirement": "MUST",
+    "manual-intervention": true
+  },
+  "configuration": {
+    "timeout": 120000,
+    "layout": "modal"
+  }
+}

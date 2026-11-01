@@ -1,0 +1,27 @@
+{
+  "payload": "payload.js",
+  "title": "Screen Capability - Wakelock support",
+  "product-requirement": "Devices should have support for WakeLock as per W3 specifications https://www.w3.org/TR/screen-wake-lock/",
+  "specification": "https://certification.bbctvapps.co.uk/docs/tv-specification/v2.0.0/#/Runtime/screen-wake-lock",
+  "assertion": "Should have a wakelock promise on the window, that resolves to a wakelock sentinel",
+  "changelog": [
+    {
+      "version": "663",
+      "change-type": "New Test",
+      "summary": "Add test for Wakelock Support"
+    },
+    {
+      "version": "latest",
+      "change-type": "Improvement",
+      "summary": "Moved test to new location"
+    }
+  ],
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1495"],
+    "manual-intervention": false,
+    "specification-section": "Runtime - Screen Wake Lock",
+    "category": "Web API",
+    "spec-requirement": "SHOULD"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "Broadcast channel Freely IP",
+  "product-requirement": "Return correct information about the current broadcast channel for Freely IP.",
+  "specification": "Terminals MUST implement the video/broadcast embedded object as defined in clause 7.13.1 of OIPF Declarative Application Environment, hereafter OIPF DAE, and as profiled and extended in clause A.2.4 of TS 102 796.",
+  "assertion": "The Broadcast channel returns the expected current channel properties for Freely IP.",
+  "configuration": {
+    "layout": "default"
+  },
+  "tags": {
+    "owner": "warrimoo",
+    "testpack-id": ["ACT-1825"],
+    "manual-intervention": false,
+    "specification-section": "Terminal Initiated Linear Context > Broadcast APIs",
+    "category": "HbbTV API interoperability",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

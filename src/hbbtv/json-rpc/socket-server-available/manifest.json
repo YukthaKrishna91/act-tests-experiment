@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "JSON-RPC WebSocketServer available",
+  "product-requirement": "The JSON-RPC WebSocketServer is available on localhost and is secure",
+  "specification": "TBC",
+  "assertion": "An application confirms that only a single <json_rpc_server> element exists in the xmlCapabilities. Then the application confirms that the location of the JSON-RPC WebSocket service endpoint is only available on a potentially trustworthy localhost network binding.",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": [],
+    "specification-section": "",
+    "spec-requirement": "SHOULD",
+    "category": "HbbTV API interoperability"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Inital creation of test"
+    }
+  ]
+}

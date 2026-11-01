@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "HTTP/2 multiplex support",
+  "product-requirement": "Device needs to support HTTP/2 multiplex.",
+  "specification": "In order to improve the performance of applications, terminals MUST support HTTP/2 - BBC Interactive HTML Application Spec",
+  "assertion": "Device is able to prove the support of support for HTTP/2 multiplex",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1035"],
+    "specification-section": "1.6.6 HTTP/2",
+    "category": "HTTP",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

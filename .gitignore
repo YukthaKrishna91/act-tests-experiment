@@ -1,0 +1,6 @@
+.DS_STORE
+bundle/
+node_modules/
+.eslintcache
+credentials.json
+monorepo.json

@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "Supports filter lighting",
+  "product-requirement": "Be able to add lighting effects to Scalable Vector Graphics (SVG).",
+  "specification": "Terminals SHOULD support Scalable Vector Graphics.",
+  "assertion": "SVG filters are supported.",
+  "configuration": {
+    "layout": "modal"
+  },
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1345"],
+    "manual-intervention": true,
+    "specification-section": "1.4.6 Scalable Vector Graphics",
+    "category": "SVG",
+    "spec-requirement": "SHOULD"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

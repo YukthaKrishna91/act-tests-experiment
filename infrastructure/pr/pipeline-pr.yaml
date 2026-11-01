@@ -1,0 +1,66 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Stack to define codepipeline for PRs
+
+Parameters:
+  GitHubRepositoryName:
+    Type: String
+    Description: Name of GitHub Repository
+
+Resources:
+  CodeBuildRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+          - Action: sts:AssumeRole
+            Effect: Allow
+            Principal:
+              Service: codebuild.amazonaws.com
+      ManagedPolicyArns:
+        - !Sub 'arn:aws:iam::${AWS::AccountId}:policy/CodeBuildBasePolicy'
+      Policies:
+        - PolicyName: ACTTestMonorepoBranchBuildRole
+          PolicyDocument:
+            Statement:
+              - Action:
+                  - s3:PutObject
+                  - s3:PutObjectAcl
+                  - s3:ListBucket
+                  - s3:DeleteObject
+                Resource:
+                  - arn:aws:s3:::test-act-test-monorepo/*
+                Effect: Allow
+  PrCodeBuild:
+    Type: AWS::CodeBuild::Project
+    Properties:
+      Name: 'act-tests-codebuild-pull-requests'
+      Description: 'PR checker for act-tests'
+      ServiceRole: !GetAtt CodeBuildRole.Arn
+      Environment:
+        ComputeType: BUILD_GENERAL1_SMALL
+        ImagePullCredentialsType: SERVICE_ROLE
+        Image: 470820891875.dkr.ecr.eu-west-1.amazonaws.com/bbc-el8-ci:nodejs-22
+        Type: ARM_CONTAINER
+        EnvironmentVariables:
+          - Name: GITHUB_REPOSITORY_NAME
+            Value: !Sub '${GitHubRepositoryName}'
+            Type: 'PLAINTEXT'
+      Artifacts:
+        Type: NO_ARTIFACTS
+      Source:
+        Type: GITHUB
+        Location: !Sub 'https://github.com/bbc/${GitHubRepositoryName}.git'
+        GitCloneDepth: 1
+        Auth:
+          Type: OAUTH
+        BuildSpec: 'infrastructure/pr/buildspec-pr.yaml'
+        BuildStatusConfig:
+          TargetUrl: !Sub 'https://wormhole.api.bbci.co.uk/account/${AWS::AccountId}/console?destination=https://${AWS::Region}.console.aws.amazon.com/codesuite/codebuild/${AWS::AccountId}/projects/act-tests-codebuild-pull-requests/build/$CODEBUILD_BUILD_ID/log?region=${AWS::Region}'
+      Triggers:
+        Webhook: true
+        FilterGroups:
+          - - Type: EVENT
+              Pattern: PULL_REQUEST_CREATED,PULL_REQUEST_UPDATED,PULL_REQUEST_REOPENED
+            - Type: BASE_REF
+              Pattern: ^refs/heads/main$
+              ExcludeMatchedPattern: false

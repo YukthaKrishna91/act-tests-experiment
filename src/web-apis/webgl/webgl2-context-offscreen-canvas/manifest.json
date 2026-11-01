@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "WebGL2 - OffscreenCanvas getContext('webgl2')",
+  "product-requirement": "Terminals MUST implement WebGL v2 and permit obtaining WebGL2RenderingContext via OffscreenCanvas",
+  "specification": "Terminals MUST implement WebGL v2 and permit a visible BBC application (main thread) to obtain WebGL2RenderingContext via OffscreenCanvas object's getContext API ('webgl2' context identifier)",
+  "assertion": "OffscreenCanvas.getContext('webgl2') returns a valid WebGL2RenderingContext on the main thread",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1792"],
+    "specification-section": "WebGL",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Initial creation of WebGL2 context test for OffscreenCanvas (main thread)"
+    }
+  ]
+}

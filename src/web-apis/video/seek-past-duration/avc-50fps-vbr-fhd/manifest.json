@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Seeking past duration (50fps FHD AVC video with VBR)",
+  "product-requirement": "Client must have access to expected events and properties after seeking past duration.",
+  "specification": "[HTML] If the new playback position is later than the end of the media resource, then let it be the end of the media resource instead.",
+  "assertion": "After seeking past the media duration, HTMLMediaElement.currentTime must be no greater than the duration.",
+  "tags": {
+    "owner": "honey-badger",
+    "testpack-id": ["ACT-1689"],
+    "specification-section": "Runtime/media-playback",
+    "spec-requirement": "SHOULD",
+    "category": "Playback - MSE"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Inital creation of test"
+    }
+  ]
+}

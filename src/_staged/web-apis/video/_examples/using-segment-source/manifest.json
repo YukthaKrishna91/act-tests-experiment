@@ -1,0 +1,17 @@
+{
+  "payload": "payload.js",
+  "title": "Use SegmentSource to load a 50fps AVC stream",
+  "tags": {
+    "owner": "honey-badger",
+    "testpack-id": [],
+    "spec-requirement": "MUST",
+    "category": "Playback - MSE"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Inital creation of test"
+    }
+  ]
+}

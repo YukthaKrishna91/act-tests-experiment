@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "Redirect Embedded Resources Test",
+  "product-requirement": "The device must follow redirects for embedded resources",
+  "specification": "Terminals MUST follow redirection responses, as specified in clause 5.1.3 of RFC 3986 [25]",
+  "assertion": "The device is able to make a redirection for assets embedded in other resources",
+  "configuration": {
+    "layout": "modal"
+  },
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1282"],
+    "manual-intervention": true,
+    "specification-section": "1.6.9",
+    "category": "HTTP",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

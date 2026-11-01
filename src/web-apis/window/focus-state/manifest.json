@@ -1,0 +1,27 @@
+{
+  "payload": "payload.js",
+  "title": "Window - Focus State",
+  "product-requirement": "Blur and focus events are sent correctly by the terminal",
+  "specification": "Standalone Context - Lifecycle Events",
+  "assertion": "Test passes if focus state is reflective of terminal state",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1478"],
+    "specification-section": "Standalone Context - Section B/C/D ",
+    "spec-requirement": "MUST",
+    "category": "Web API",
+    "manual-intervention": true
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "Improvement",
+      "summary": "Event listener now supports capture as well as non capture events"
+    },
+    {
+      "version": "1",
+      "change-type": "New Test",
+      "summary": "Inital creation of test"
+    }
+  ]
+}

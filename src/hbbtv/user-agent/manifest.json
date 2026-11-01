@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "User Agent",
+  "product-requirement": "Report the HbbTV version in the user agent string.",
+  "specification": "The structure of the user-agent value MUST be declared.",
+  "assertion": "The user agent string includes a valid HbbTV version token.",
+  "configuration": {
+    "layout": "default"
+  },
+  "tags": {
+    "owner": "warrimoo",
+    "testpack-id": ["ACT-1826"],
+    "manual-intervention": false,
+    "specification-section": "Runtime > Networking",
+    "category": "HbbTV API interoperability",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "WebGL - webglcontextlost event",
+  "product-requirement": "Terminals MUST raise webglcontextlost event when freeing a WebGL context",
+  "specification": "Terminals MUST raise the webglcontextlost event when freeing a context (e.g., when application goes to background)",
+  "assertion": "The webglcontextlost event fires when the WebGL context is lost",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1793"],
+    "specification-section": "WebGL",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Initial creation of webglcontextlost event test"
+    }
+  ]
+}

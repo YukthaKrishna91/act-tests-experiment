@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "CORS POST and encode",
+  "product-requirement": "Applications may require use of CORS POST request to send data for purposes such as authentication, or search.",
+  "specification": "The terminal MUST support the XMLHttpRequest (XHR) object [5]",
+  "assertion": "Make a XHR POST request and confirm the server responds with the sent value",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1030"],
+    "specification-section": "1.6 Networking",
+    "category": "HTTP",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

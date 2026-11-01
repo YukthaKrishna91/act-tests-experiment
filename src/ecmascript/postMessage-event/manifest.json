@@ -1,0 +1,15 @@
+{
+  "payload": "payload.js",
+  "title": "ECMAScript: Event propagation with window.postMessage",
+  "product-requirement": "Device needs to be able to send events via the postMessage method",
+  "specification": "Terminals MUST implement at least ECMAScript 6.0 [1]",
+  "assertion": "That using window.postMessage fires a message event",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1229"],
+    "specification-section": "1.2 ECMAScript",
+    "category": "ECMAScript",
+    "spec-requirement": "MUST",
+    "timeout": 5000
+  }
+}

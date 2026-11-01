@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "TLS client certificate verification",
+  "product-requirement": "Successfull terminal verification on BBC certificate management server.",
+  "specification": "The terminal MUST present its TLS certificate that is trusted by an CA deployed on the server - Section 2.1 of the BBC Interactive HTML Application Spec",
+  "assertion": "Device client certificate is verified by BBC certificate management server.",
+  "tags": {
+    "owner": "partner-engineering",
+    "testpack-id": ["ACT-1195"],
+    "specification-section": "2.1 Terminal authentication",
+    "category": "Security",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

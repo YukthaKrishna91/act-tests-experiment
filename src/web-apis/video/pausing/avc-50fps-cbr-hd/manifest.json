@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Pausing (avc-50fps-cbr-hd)",
+  "product-requirement": "Client must be able to pause and resume playback, and receive the expected associated events.",
+  "specification": "Terminals MUST implement Media Source Extensions API (https://www.w3.org/TR/media-source-2/).",
+  "assertion": "MediaElement can be paused and resumed, causing the expected effect on currentTime, and timeupdate events.",
+  "tags": {
+    "owner": "honey-badger",
+    "testpack-id": ["ACT-1700"],
+    "specification-section": "Runtime/media-playback",
+    "spec-requirement": "MUST",
+    "category": "Playback - MSE"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Inital creation of test"
+    }
+  ]
+}

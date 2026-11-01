@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Supports get computed style",
+  "product-requirement": "Ability to use getComputedStyle to access CSS properties of an element.",
+  "specification": "Test automation support.",
+  "assertion": "getComputedStyle works.",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1288"],
+    "specification-section": "CSSOM-1",
+    "category": "CSS",
+    "spec-requirement": "SHOULD"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+<div id="testStatus">Failed to Load (Javascript Disabled)</div>
+<ol id="telemetryEvents" style="font-family: monospace"></ol>
+<script>
+  var testStatus = document.getElementById('testStatus');
+  var telemetryEvents = document.getElementById('telemetryEvents');
+  document.addEventListener('started', function () {
+    testStatus.innerText = 'Test Running...';
+  });
+  document.addEventListener('finished:success', function () {
+    testStatus.innerText = 'Test Passed';
+  });
+  document.addEventListener('finished:failure', function () {
+    testStatus.innerText = 'Test Failed';
+  });
+  document.addEventListener('finished:error', function () {
+    testStatus.innerText = 'Test Errored';
+  });
+  document.addEventListener('telemetry', function (ev) {
+    var telemetrySpan = document.createElement('li');
+    telemetrySpan.innerText = JSON.stringify(ev.detail, null, 2);
+    telemetryEvents.appendChild(telemetrySpan);
+  });
+</script>
+<script src="./payload.js"></script>

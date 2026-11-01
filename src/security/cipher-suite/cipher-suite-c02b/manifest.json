@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "TLS 1.2: Cipher Suite C02B (TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256)",
+  "product-requirement": "Device needs support Cipher Suites in order to connect to BBC services securely.",
+  "specification": "TLS support adhering to section 11.2 of TS 102 796 [14] MUST be provided.",
+  "assertion": "Device Supports Cipher Suite C02B (TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256) over TLS v1.2",
+  "tags": {
+    "owner": "partner-engineering",
+    "testpack-id": ["ACT-1025"],
+    "specification-section": "1.6 Networking",
+    "category": "Security",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

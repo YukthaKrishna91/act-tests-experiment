@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "ECMAScript: Test Map iteration",
+  "product-requirement": "Device needs to support Map() and iteration across keys, values and entries.",
+  "specification": "Terminals MUST implement at least ECMAScript 6.0 [1]",
+  "assertion": "Iteration across the Map follows insertion order.",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1386"],
+    "specification-section": "1.2 ECMAScript",
+    "category": "ECMAScript",
+    "spec-requirement": "MUST"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "WebAssembly - Mutable globals import/export",
+  "product-requirement": "Terminals MUST implement WebAssembly mutable-globals feature",
+  "specification": "Terminals MUST support importing and exporting mutable globals between JavaScript and WebAssembly",
+  "assertion": "WebAssembly module can import a mutable global and modify it",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1819"],
+    "specification-section": "WebAssembly",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Initial creation of mutable-globals feature test"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "#lib/*": ["./lib/*"],
+      "#templates/*": ["./templates/*"]
+    }
+  },
+  "exclude": [".git", "node_modules"]
+}

@@ -1,0 +1,26 @@
+{
+  "payload": "payload.js",
+  "title": "Key Mapping",
+  "product-requirement": "Expose required VK_* constants and map them to the corresponding remote control keys",
+  "specification": "All remote control units supplied with the terminal MUST include.",
+  "assertion": "VK_RED, VK_GREEN, VK_BLUE, VK_YELLOW, VK_ENTER, VK_UP, VK_DOWN, VK_LEFT and VK_RIGHT MUST exist, have numeric values and match the corresponding remote control key presses",
+  "configuration": {
+    "timeout": 60000,
+    "layout": "modal"
+  },
+  "tags": {
+    "owner": "warrimoo",
+    "testpack-id": ["ACT-1829"],
+    "specification-section": "Remote control units",
+    "category": "HbbTV API interoperability",
+    "spec-requirement": "MUST",
+    "manual-intervention": true
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

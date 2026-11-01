@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Fetch - CORS Get Origin",
+  "product-requirement": "Applicatons need to be able make request to external domains to load content.",
+  "specification": "Terminals MUST implement CORS and the CORS protocol as defined in Fetch [54]",
+  "assertion": "Make a request to a server on a separate origin, you can confirm the response can read the domain from the request.",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1266"],
+    "specification-section": "1.6 Networking",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

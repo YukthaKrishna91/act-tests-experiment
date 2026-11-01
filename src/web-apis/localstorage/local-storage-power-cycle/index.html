@@ -1,0 +1,61 @@
+<div id="testStatus">Failed to Load (Javascript Disabled)</div>
+<script>
+  var testStatus = document.getElementById('testStatus');
+  document.addEventListener('started', function () {
+    testStatus.innerText = 'Test Running...';
+  });
+  document.addEventListener('finished:success', function () {
+    testStatus.innerText = 'Test Passed';
+  });
+  document.addEventListener('finished:failure', function () {
+    testStatus.innerText = 'Test Failed';
+  });
+  document.addEventListener('finished:error', function () {
+    testStatus.innerText = 'Test Errored';
+  });
+</script>
+
+<div id="interventionArea"></div>
+
+<div id="telemetryStatus"></div>
+
+<script>
+  var telemetryStatus = document.getElementById('telemetryStatus');
+  document.addEventListener('telemetry', function (ev) {
+    var entry = document.createElement('pre');
+    entry.innerHTML = JSON.stringify(ev.detail);
+    telemetryStatus.appendChild(entry);
+  });
+
+  document.addEventListener('requestIntervention', function (ev) {
+    testStatus.innerText = 'Test Waiting for Human Intervention';
+    interventionArea.innerHTML = '';
+    var interventionText = document.createElement('p');
+    interventionText.innerText = ev.detail.request.text || '';
+    interventionArea.appendChild(interventionText);
+
+    var options = ev.detail.request.options || [
+      {
+        label: 'Dismiss',
+        value: null,
+        class: 'primary'
+      }
+    ];
+
+    options.forEach((option) => {
+      var optionButton = document.createElement('button');
+      optionButton.classList.add('intervention-response');
+      optionButton.innerText = option.label;
+      optionButton.addEventListener('click', function () {
+        var interventionResponse = new CustomEvent('responseToIntervention', {
+          detail: { response: { userResponse: option.value } }
+        });
+        document.dispatchEvent(interventionResponse);
+        interventionArea.innerHTML = '';
+      });
+      interventionArea.appendChild(optionButton);
+    });
+  });
+</script>
+
+<script src="./payload.js"></script>

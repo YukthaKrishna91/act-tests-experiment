@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "WebAssembly - validate()",
+  "product-requirement": "Terminals MUST implement WebAssembly.validate() method",
+  "specification": "Terminals MUST support WebAssembly.validate() to check if bytes form a valid WebAssembly module",
+  "assertion": "WebAssembly.validate() returns true for valid bytecode and false for invalid bytecode",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1805"],
+    "specification-section": "WebAssembly",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Initial creation of WebAssembly.validate() test"
+    }
+  ]
+}

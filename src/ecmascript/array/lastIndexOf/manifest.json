@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "Test if Array.lastIndexOf() is supported",
+  "product-requirement": "Device needs to support Array.prototype.lastIndexOf() to return the last index at which a given element can be found in the array.",
+  "specification": "Terminals MUST implement at least ECMAScript 6.0 [1]",
+  "assertion": "The lastIndexOf() method returns the element value at the end of the array.",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1006"],
+    "specification-section": "1.2 ECMAScript",
+    "category": "ECMAScript",
+    "spec-requirement": "MUST"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Web Workers transferControlToOffscreen",
+  "product-requirement": "Terminals MUST implement the transferControlToOffscreen method and allow an OffscreenCanvas to be transferred to a web worker using postMessage.",
+  "specification": "The HTMLCanvasElement.transferControlToOffscreen() method transfers control to an OffscreenCanvas object which can be used to render off the main thread.",
+  "assertion": "A canvas element's transferControlToOffscreen method returns an OffscreenCanvas that can be transferred to a worker via postMessage.",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1779"],
+    "specification-section": "Web Workers",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Initial creation of Web Workers transferControlToOffscreen test"
+    }
+  ]
+}

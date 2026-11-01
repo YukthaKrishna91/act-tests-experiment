@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Supports pseudo selectors [requires getComputedStyle]",
+  "product-requirement": "Ability to apply pseudo-classes.",
+  "specification": "The CSS specifications referenced in clause 3.4 of CTA Web Media API snapshot MUST be implemented.",
+  "assertion": "We can target elements based on their relation to other elements.",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1293"],
+    "specification-section": "1.4.2 CSS",
+    "category": "CSS",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

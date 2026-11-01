@@ -1,0 +1,25 @@
+{
+  "payload": "payload.js",
+  "title": "Local Storage with Power Cycle",
+  "product-requirement": "Local storage must be able to persist over device restarts to allow user to remain logged in",
+  "specification": "Terminals MUST support Web Storage (https://www.w3.org/TR/2013/REC-webstorage-20130730/).",
+  "assertion": "Local storage persists over power cycle",
+  "configuration": {
+    "layout": "modal"
+  },
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1053"],
+    "manual-intervention": true,
+    "specification-section": "1.7 Local Storage",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

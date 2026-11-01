@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "TLS v1.3 cipher support",
+  "product-requirement": "Device MUSTsupport several specific ciphers introduced by TLS v1.3.",
+  "specification": "TLS v1.3 MUST be supported.",
+  "assertion": "Device supports the required TLS v1.3 specific ciphers",
+  "tags": {
+    "owner": "partner-engineering",
+    "testpack-id": ["ACT-1196"],
+    "specification-section": "1.6.4 TLS Support",
+    "category": "Security",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

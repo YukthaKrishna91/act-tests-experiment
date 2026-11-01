@@ -1,0 +1,9 @@
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <path d="M100,100 L150,150 L150,200
+             A50,50 0 1,0 100,150
+             Q20,150 100,200
+             C100,200 175,150 200,100
+             S 150 150, 180 80 Z"
+             style="stroke: #ff0000; stroke-width: 3; fill: green">
+</path>
+</svg>

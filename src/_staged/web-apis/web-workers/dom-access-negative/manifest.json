@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "Web Workers no DOM access",
+  "product-requirement": "Terminals MUST isolate Web Worker execution context from the DOM.",
+  "specification": "Workers run in a different global context than the window. The global scope for workers is WorkerGlobalScope.",
+  "assertion": "The 'window' and 'document' objects are undefined within a worker's scope.",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1784"],
+    "specification-section": "Web Workers",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  }
+}

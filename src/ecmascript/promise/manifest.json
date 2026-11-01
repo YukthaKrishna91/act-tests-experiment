@@ -1,0 +1,14 @@
+{
+  "payload": "payload.js",
+  "title": "Promises",
+  "product-requirement": "Device needs to support the Promise object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.",
+  "specification": "Terminals MUST implement at least ECMAScript 6.0 [1]",
+  "assertion": "Promises work with `.then` and `.catch`",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1315"],
+    "specification-section": "1.2 ECMAScript",
+    "category": "ECMAScript",
+    "spec-requirement": "MUST"
+  }
+}

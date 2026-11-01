@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "CORS Send and Get origin",
+  "product-requirement": "Applicatons need to be able make request to external domains to load content.",
+  "specification": "1.6.1 XMLHttpRequest support\nThe terminal MUST support the XMLHttpRequest (XHR) object [5]. The terminal MUST support CORS, enabling cross-origin data retrieval",
+  "assertion": "Make a request to a server on a separate origin, you can confirm the response can read the domain from the request.",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1031"],
+    "specification-section": "1.6 Networking",
+    "category": "HTTP",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

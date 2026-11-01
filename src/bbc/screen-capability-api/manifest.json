@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Screen Capability - API",
+  "product-requirement": "Expose the capabilities of the screen in order to only serve UHD content to capable screens",
+  "specification": "2.3.4 - Display Capabilities",
+  "assertion": "BBC specification API exists",
+  "tags": {
+    "owner": "honey-badger",
+    "testpack-id": ["ACT-1220"],
+    "specification-section": "2.3.4 - Display Capabilities",
+    "category": "BBC API interoperability",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

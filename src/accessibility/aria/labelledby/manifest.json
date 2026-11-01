@@ -1,0 +1,47 @@
+{
+  "payload": "payload.js",
+  "title": "ARIA - Labelledby",
+  "product-requirement": "Screen readers should read out the elements specified by the aria-labelledby attribute",
+  "specification": "When enabled, the screen reader SHOULD use the semantic document structure and ARIA markup",
+  "assertion": "Test passes if the screen reader reads out the text content of elements specified (by their id's) in the focused div element's aria-labelledby value. E.g. aria-labelledby=\"label1 label2\". It should also not read out the text content of the element with the aria-labelledby attribute",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1240"],
+    "category": "Accessibility",
+    "manual-intervention": true,
+    "specification-section": "Runtime > Screen reader",
+    "spec-requirement": "SHOULD"
+  },
+  "changelog": [
+    {
+      "version": "1",
+      "change-type": "Improvement",
+      "summary": "Moved tests into tv-client repo"
+    },
+    {
+      "version": "2",
+      "change-type": "Bug Fix",
+      "summary": "Added changelog to manifest"
+    },
+    {
+      "version": "3",
+      "change-type": "Bug Fix",
+      "summary": "No functional change - Update changelog to be inline with version number"
+    },
+    {
+      "version": "5",
+      "change-type": "Bug Fix",
+      "summary": "No functional change - Update changelog to be inline with version number"
+    },
+    {
+      "version": "24",
+      "change-type": "Bug Fix",
+      "summary": "Update manifest to include values for the specification and spec-requirement fields"
+    },
+    {
+      "version": "latest",
+      "change-type": "Improvement",
+      "summary": "Moved test to new location"
+    }
+  ]
+}

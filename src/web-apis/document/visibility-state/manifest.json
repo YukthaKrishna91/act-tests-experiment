@@ -1,0 +1,27 @@
+{
+  "payload": "payload.js",
+  "title": "Document - Visibility state",
+  "product-requirement": "document.visibility state needs to reflect the terminal",
+  "specification": "Standalone Context - Application Lifecycle - Lifecycle Events",
+  "assertion": "Test passes if visibility state is reflective of terminal state",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1479"],
+    "specification-section": "Standalone Context - Section B/E/F",
+    "spec-requirement": "MUST",
+    "category": "Web API",
+    "manual-intervention": true
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "Bug Fix",
+      "summary": "Fix typo in title"
+    },
+    {
+      "version": "133",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

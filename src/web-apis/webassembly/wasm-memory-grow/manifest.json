@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "WebAssembly - Memory.grow()",
+  "product-requirement": "Terminals MUST implement WebAssembly.Memory.prototype.grow()",
+  "specification": "Terminals MUST support growing linear memory via memory.grow(delta)",
+  "assertion": "memory.grow() increases memory size and returns previous page count",
+  "tags": {
+    "owner": "Barn Owls",
+    "testpack-id": ["ACT-1800"],
+    "specification-section": "WebAssembly",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Initial creation of WebAssembly.Memory.grow() test"
+    }
+  ]
+}

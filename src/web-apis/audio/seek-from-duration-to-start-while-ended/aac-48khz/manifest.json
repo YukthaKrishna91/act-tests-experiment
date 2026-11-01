@@ -1,0 +1,26 @@
+{
+  "payload": "payload.js",
+  "title": "Seeking from duration to start while in ended state (aac-48khz)",
+  "product-requirement": "Client must have access to expected events and properties after seeking from duration to start while MediaSource is in the ended state.",
+  "specification": "Terminals MUST implement Media Source Extensions API (https://www.w3.org/TR/media-source-2/).",
+  "assertion": "MediaSource and MediaElement events must emit in expected order, and properties must be of expected values.",
+  "tags": {
+    "owner": "honey-badger",
+    "testpack-id": ["ACT-1649"],
+    "specification-section": "Runtime/media-playback",
+    "spec-requirement": "MUST",
+    "category": "Playback - MSE"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Inital creation of test"
+    },
+    {
+      "version": "v27.0.0-5",
+      "change-type": "Bug Fix",
+      "summary": "Fixed floating point precision and race condition: slow segment download speed can cause timeouts"
+    }
+  ]
+}

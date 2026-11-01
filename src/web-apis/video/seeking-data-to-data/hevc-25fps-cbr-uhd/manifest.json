@@ -1,0 +1,26 @@
+{
+  "payload": "payload.js",
+  "title": "Seeking from data to data (hevc-25fps-cbr-uhd)",
+  "product-requirement": "Client must have access to expected events and properties while seeking between buffered regions.",
+  "specification": "Terminals MUST implement Media Source Extensions API (https://www.w3.org/TR/media-source-2/).",
+  "assertion": "MediaSource and MediaElement events must emit in expected order, and properties must be of expected values throughout the seek.",
+  "tags": {
+    "owner": "honey-badger",
+    "testpack-id": ["ACT-1742"],
+    "specification-section": "Runtime/media-playback",
+    "spec-requirement": "MUST",
+    "category": "Playback - MSE UHD"
+  },
+  "changelog": [
+    {
+      "version": "v27.0.0-1",
+      "change-type": "New Test",
+      "summary": "Inital creation of test"
+    },
+    {
+      "version": "v27.0.0-8",
+      "change-type": "Bug Fix",
+      "summary": "Updated test asset"
+    }
+  ]
+}

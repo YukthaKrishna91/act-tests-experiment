@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Fetch - 'no-cache' Header Respect Test",
+  "product-requirement": "The Device may be required to not cache data",
+  "specification": "Terminals MUST implement the Fetch [54] and XMLHttpRequest [5] standards.",
+  "assertion": "Make a request every second and make sure the device accepts the new response without caching the old one",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1268"],
+    "specification-section": "2.2.6 Stream Delivery and throughput requirements",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Initial creation of test"
+    }
+  ]
+}

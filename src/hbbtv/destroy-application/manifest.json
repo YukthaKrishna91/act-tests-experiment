@@ -1,0 +1,21 @@
+{
+  "payload": "payload.js",
+  "title": "Destroy application",
+  "product-requirement": "The device supports the destroyApplication behaviour",
+  "specification": "The terminal MUST support the declarative creation of the application/oipfApplicationManager object",
+  "assertion": "Test passes if the Application Manager element is present and implements the destroyApplication funciton",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1600"],
+    "specification-section": "Runtime - destroyApplication behaviour",
+    "spec-requirement": "MUST",
+    "category": "HbbTV API interoperability"
+  },
+  "changelog": [
+    {
+      "version": "latest",
+      "change-type": "New Test",
+      "summary": "Inital creation of test"
+    }
+  ]
+}

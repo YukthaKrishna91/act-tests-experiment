@@ -1,0 +1,26 @@
+{
+  "payload": "payload.js",
+  "title": "Service Worker: Non blocking, run off the main thread",
+  "product-requirement": "BBC applications may utilise this API to provide a limited user experience when the terminal is offline or during a service outage.",
+  "specification": "Terminals MUST implement the Service Workers API.",
+  "assertion": "Verify service workers run on a different thread to the main JavaScript thread and it is non-blocking",
+  "tags": {
+    "owner": "barn-owl",
+    "testpack-id": ["ACT-1490"],
+    "specification-section": "Runtime > Service workers",
+    "category": "Web API",
+    "spec-requirement": "MUST"
+  },
+  "changelog": [
+    {
+      "version": "v26.0.0",
+      "change-type": "Improvement",
+      "summary": "Moved to new repository"
+    },
+    {
+      "version": "v1.5.3",
+      "change-type": "New Test",
+      "summary": "Test case created."
+    }
+  ]
+}
